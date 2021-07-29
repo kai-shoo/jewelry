@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="html academy grading">
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page page--nojs">
+    <header class="page__header header container">
+      <div class="header__toggle toggle">
+        <button class="toggle__button" aria-label="toggle menu" type="button">
+          <span class="toggle__icon"></span>
+        </button>
+      </div>
+
+      <div class="header__search search">
+        <label class="search__container">
+          <span class="search__icon">
+            <svg width="14" height="14">
+              <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+            </svg>
+          </span>
+          <input type="search" placeholder="Type here to search">
+        </label>
+      </div>
+      <a class="header__logo logo">
+        <img src="img/logo.svg" alt="Jewellery" width="66" height="66">
+      </a>
+      <div class="header__nav header__nav--secondary nav nav--secondary">
+        <div class="nav__container">
+          <a class="nav__link nav__link--login" href="#">Login</a>
+          <a class="nav__link nav__link--cart" href="#">
+            <span class="nav__cart-icon">
+              <svg width="18" height="16">
+                <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+              </svg>
+            </span>
+            <span class="nav__cart-text">Cart&nbsp;<span>0</span></span>
+          </a>
+        </div>
+      </div>
+      <div class="header__nav header__nav--navigation nav nav--navigation">
+        <ul class="nav__container">
+          <li class="nav__item">
+            <a class="nav__link" href="#">What’s new</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Chokers</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Necklaces</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Rings</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Earrings</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__nav header__nav--alternate nav nav--alternate">
+        <div class="nav__container">
+          <a class="nav__link" href="#">About CH</a>
+          <a class="nav__link" href="#">Stores & Hours</a>
+          <a class="nav__link" href="#">Contact Us</a>
+        </div>
+      </div>
+    </header>
+    <main style="height: 2000px"></main>
+    <footer style="height: 2000px" class="page__footer footer"></footer>
+
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
