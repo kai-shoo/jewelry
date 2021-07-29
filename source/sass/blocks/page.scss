@@ -1,0 +1,29 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+
+  font-family: $font-family;
+  font-size: 16px;
+  color: $primary;
+
+  scroll-behavior: smooth;
+
+  &--block {
+    overflow: hidden;
+  }
+}
+
+.page__header {
+  flex: 0 0 auto;
+}
+
+.page__main {
+  flex: 1 0 auto;
+}
+
+.page__footer {
+  margin-top: auto;
+  flex: 0 0 auto;
+}
