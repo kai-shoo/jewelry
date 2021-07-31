@@ -40,15 +40,24 @@
     @media (max-width: $tablet) {
       position: absolute;
       display: block;
-      top: 55px;
-      right: 45px;
+      top: 54px;
+      right: 44px;
       margin: 0;
+    }
+
+    @media (max-width: $mobile) {
+      top: 37px;
+      right: 14px;
     }
   }
 
   .header--active & {
     @media (max-width: $tablet) {
       color: $white;
+
+      &:not(.nav__link--cart) {
+        @include hover-animation($white);
+      }
     }
   }
 
@@ -67,6 +76,8 @@
   }
 
   .nav--alternate & {
+    width: fit-content;
+
     font-weight: 500;
     font-size: 18px;
     line-height: 130%;
@@ -74,6 +85,8 @@
 
     margin-bottom: 22px;
   }
+
+  @include hover-animation;
 
   &--login {
     @media (max-width: $tablet) {
@@ -103,9 +116,17 @@
 .nav__cart-icon svg {
   stroke: $primary;
   fill: transparent;
+  stroke: $primary;
 
-  .header--active & {
-    stroke: $white;
+  .nav__link--cart:hover &,
+  .nav__link--cart:focus & {
+    stroke: $accent;
+  }
+
+  @media (max-width: $tablet) {
+    .header--active & {
+      stroke: $white;
+    }
   }
 }
 
@@ -117,8 +138,11 @@
 
 .nav__item {
   display: block;
+  margin-bottom: 17px;
 
-  .nav--navigation & {
-    margin-bottom: 21px;
+  @media (max-width: $tablet) {
+    .nav--navigation & {
+      margin-bottom: 21px;
+    }
   }
 }

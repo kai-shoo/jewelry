@@ -1,0 +1,85 @@
+.subscribe h2 {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 16px;
+  line-height: 130%;
+  color: $grey;
+
+  @media (max-width: $mobile) {
+    line-height: 140%;
+    margin-bottom: 37px;
+  }
+}
+
+.subscribe p {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-family: $font-family-ui;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+
+  color: $white;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 13px;
+  }
+}
+
+.subscribe input {
+  width: 100%;
+  padding-bottom: 9px;
+
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $white;
+
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid $white;
+
+  &::placeholder {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $grey;
+  }
+}
+
+.subscribe__submit {
+  position: absolute;
+  top: 2px;
+  right: -9px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 21px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: $white;
+
+  background: transparent;
+  border: none;
+  appearance: none;
+}
+
+.subscribe__submit svg {
+  stroke: $white;
+}
+
+.subscribe__input-wrapper {
+  position: relative;
+}
+
+.subscribe__submit-icon {
+  margin-left: 20px;
+}

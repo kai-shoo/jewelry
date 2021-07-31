@@ -1,0 +1,33 @@
+.links {
+}
+.links__container {
+  margin: 0;
+  padding: 0;
+
+  columns: 2;
+  column-gap: Min(43%, 140px);
+
+  list-style: none;
+
+  @media (max-width: $tablet) {
+    column-gap: Min(50%, 169px);
+  }
+
+  @media (max-width: $mobile) {
+    columns: unset;
+  }
+}
+.links__item {
+  margin-bottom: 17px;
+
+  &:nth-child(4) {
+    margin-bottom: 37px;
+  }
+}
+.links__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: $white;
+  white-space: nowrap;
+}

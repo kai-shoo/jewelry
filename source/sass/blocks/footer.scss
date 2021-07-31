@@ -1,0 +1,64 @@
+.footer {
+  background: $black;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: minmax(min-content, 500px) min-content min-content;
+  padding-top: 90px;
+  justify-content: space-between;
+  column-gap: 25px;
+
+  @media (max-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 150px;
+    padding-top: 50px;
+    justify-content: flex-start;
+  }
+
+  @media (max-width: $mobile) {
+    padding-right: 15px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+
+.footer__subscribe {
+  max-width: 500px;
+  width: 100%;
+
+  @media (max-width: $tablet) {
+    flex-basis: 100%;
+    max-width: 560px;
+    margin-bottom: 40px;
+  }
+}
+
+.footer__social {
+  margin-top: 4px;
+
+  @media (max-width: $tablet) {
+    margin-left: 95px;
+    margin-top: 7px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 7px;
+
+    margin-left: 0;
+  }
+}
+
+.footer__links {
+  margin-top: 4px;
+  margin-right: 33px;
+
+  @media (max-width: $tablet) {
+    margin-right: 0;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 19px;
+  }
+}

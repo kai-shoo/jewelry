@@ -8,8 +8,6 @@
 
   background-color: transparent;
 
-  transition: color 0.3s;
-
   .header--active & {
     background-color: transparent;
   }
@@ -30,8 +28,14 @@
   border: none;
   cursor: pointer;
 
+  @include hover-square-animation;
+
   .header--active & {
     height: 50px;
+
+    @media (max-width: $tablet) {
+      @include hover-square-animation($white);
+    }
   }
 }
 

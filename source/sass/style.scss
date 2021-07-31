@@ -1,5 +1,6 @@
 @import "fonts.scss";
 @import "variables.scss";
+@import "mixins.scss";
 @import "global.scss";
 @import "ui.scss";
 @import "blocks/page.scss";
@@ -9,3 +10,8 @@
 @import "blocks/nav.scss";
 @import "blocks/search.scss";
 @import "blocks/header.scss";
+
+@import "blocks/links.scss";
+@import "blocks/subscribe.scss";
+@import "blocks/social.scss";
+@import "blocks/footer.scss";

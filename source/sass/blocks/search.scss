@@ -1,5 +1,8 @@
 .search {
   margin-left: -5px;
+  position: relative;
+
+  @include hover-animation;
 }
 
 .search input {
@@ -19,11 +22,11 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
-    color: $placeholder;
+    color: $grey;
   }
 
   &:focus {
-    outline: solid 2px $accent;
+    outline: none;
   }
 
   @media (max-width: $tablet) {
@@ -31,7 +34,7 @@
 
     color: $white;
 
-    background: $placeholder-bgc;
+    background: $grey-bgc;
     border-radius: 21px;
 
     .header--active & {
@@ -69,6 +72,10 @@
 
 .search__icon svg {
   color: $black;
+
+  .search:focus-within & {
+    fill: $accent;
+  }
 
   @media (max-width: $tablet) {
     fill: $white;

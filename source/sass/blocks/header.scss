@@ -11,6 +11,7 @@
   }
 
   @media (max-width: $tablet) {
+    padding-bottom: 23px;
     align-items: center;
 
     &.header--active {
@@ -22,6 +23,11 @@
 
       background: $accent;
     }
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 13px;
+    padding-bottom: 27px;
   }
 }
 
@@ -112,5 +118,10 @@
     .page--nojs & {
       display: none;
     }
+  }
+
+  @media (max-width: $mobile) {
+    top: 21px;
+    left: 16px;
   }
 }
