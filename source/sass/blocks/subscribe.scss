@@ -29,9 +29,10 @@
   }
 }
 
-.subscribe input {
+.subscribe__label input {
   width: 100%;
   padding-bottom: 9px;
+  padding-right: 110px;
 
   font-family: $font-family;
   font-weight: 500;
@@ -43,6 +44,14 @@
   background: transparent;
   border-bottom: 1px solid $white;
 
+  outline: none;
+  transition: width 0.2s ease-out;
+
+  .subscribe__input-wrapper:hover &,
+  .subscribe__input-wrapper:hover & {
+    width: calc(100% - 150px);
+  }
+
   &::placeholder {
     font-family: $font-family;
     font-weight: 500;
@@ -52,11 +61,13 @@
   }
 }
 
-.subscribe__submit {
+.subscribe__submit-wrapper {
   position: absolute;
   top: 2px;
   right: -9px;
+}
 
+.subscribe__submit {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -69,7 +80,15 @@
 
   background: transparent;
   border: none;
+  cursor: pointer;
   appearance: none;
+
+  &:hover,
+  &:focus {
+    font-weight: bold;
+    transform-origin: bottom left;
+    transform: scale(1.1);
+  }
 }
 
 .subscribe__submit svg {

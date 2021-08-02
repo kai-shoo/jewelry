@@ -19,6 +19,13 @@
 }
 .links__item {
   margin-bottom: 17px;
+  width: fit-content;
+
+  @include hover-animation($white);
+
+  &:active {
+    opacity: 0.7;
+  }
 
   &:nth-child(4) {
     margin-bottom: 37px;
