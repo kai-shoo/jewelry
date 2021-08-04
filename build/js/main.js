@@ -38,6 +38,24 @@
 /* eslint-disable new-cap */
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
+new Splide(`.splide`, {
+  type: `loop`,
+  perPage: 4,
+  perMove: 4,
+  arrowPath: `M5 19.5H34M34 19.5L28.5135 15M34 19.5L28.5135 24`,
+  gap: `30px`,
+  trimSpace: true,
+  breakpoints: {
+    1024: {
+      perPage: 2,
+      perMove: 2,
+    },
+  },
+}).mount();
+;
+/* eslint-disable new-cap */
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 (function () {
   const phoneInputs = document.querySelectorAll(`input[type="tel"]`);
   const form = document.querySelector(`.form__wrapper`);
@@ -151,7 +169,7 @@
   const page = document.querySelector(`.page`);
   const modalClose = document.querySelector(`.modal__close`);
   const modal = document.querySelector(`#modal`);
-  const overlay = modal.querySelector(`.modal__overlay`);
+  const overlay = document.querySelector(`#modal .modal__overlay`);
 
   if (page && modalButtons && modalClose && modal && overlay) {
     const openModal = function () {

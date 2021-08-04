@@ -3,7 +3,7 @@
   const page = document.querySelector(`.page`);
   const modalClose = document.querySelector(`.modal__close`);
   const modal = document.querySelector(`#modal`);
-  const overlay = modal.querySelector(`.modal__overlay`);
+  const overlay = document.querySelector(`#modal .modal__overlay`);
 
   if (page && modalButtons && modalClose && modal && overlay) {
     const openModal = function () {

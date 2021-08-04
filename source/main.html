@@ -75,9 +75,368 @@
       </div>
     </header>
 
-    <main style="height: 2000px"></main>
+    <main>
+      <section class="hero hero--main">
+        <div class="hero__image">
+          <!-- 1х: 1366px; 2x: 2732px -->
+          <picture>
+            <source
+              srcset="img/hero/hero-main.webp, img/hero/hero-main@2x.webp 2x"
+              type="image/webp"
+            />
+            <img
+              src="img/hero/hero-main.jpg"
+              srcset="img/hero/hero-main.jpg 2x"
+              width="1366"
+              height="453"
+              alt="several beautiful necklaces on the neckline of a girl in a white blouse"
+            />
+          </picture>
+        </div>
+        <div class="hero__content">
+          <h2>Perfection</h2>
+          <p>Made to be yours</p>
+        </div>
+      </section>
 
-    <footer style="height: 2000px" class="page__footer footer">
+      <section class="showcase container splide">
+        <div class="showcase__header">
+          <h2>New in</h2>
+          <a class="showcase__link-shop" href="#">Shop now</a>
+        </div>
+        <div class="splide__track">
+          <ul class="showcase__list splide__list">
+            <li class="showcase__item splide__slide">
+              <article class="showcase__card product-card glide__slide">
+                <a class="product-card__wrapper" href="#">
+                  <div class="product-card__image">
+                    <picture>
+                      <source
+                        srcset="
+                          img/products/gemstone-necklace.webp,
+                          img/products/gemstone-necklace@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/products/gemstone-necklace.jpg"
+                        srcset="img/products/gemstone-necklace.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="purple pendant"
+                      />
+                    </picture>
+                  </div>
+                  <h3>Necklace with amethyst</h3>
+                  <p>$ 145</p>
+                </a>
+              </article>
+            </li>
+
+            <li class="showcase__item splide__slide">
+              <article class="showcase__card product-card glide__slide">
+                <a class="product-card__wrapper" href="#">
+                  <div class="product-card__image">
+                    <picture>
+                      <source
+                        srcset="
+                          img/products/layered-choker-necklace.webp,
+                          img/products/layered-choker-necklace@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/products/layered-choker-necklace.jpg"
+                        srcset="img/products/layered-choker-necklace.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="purple pendant"
+                      />
+                    </picture>
+                  </div>
+                  <h3>Layered сhoker</h3>
+                  <p>$ 115</p>
+                </a>
+              </article>
+            </li>
+
+            <li class="showcase__item splide__slide">
+              <article class="showcase__card product-card glide__slide">
+                <a class="product-card__wrapper" href="#">
+                  <div class="product-card__image">
+                    <picture>
+                      <source
+                        srcset="
+                          img/products/dainty-gold-necklace.webp,
+                          img/products/dainty-gold-necklace@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/products/dainty-gold-necklace.jpg"
+                        srcset="img/products/dainty-gold-necklace.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="purple pendant"
+                      />
+                    </picture>
+                  </div>
+                  <h3>Gold chain</h3>
+                  <p>$ 215</p>
+                </a>
+              </article>
+            </li>
+
+            <li class="showcase__item splide__slide">
+              <article class="showcase__card product-card glide__slide">
+                <a class="product-card__wrapper" href="#">
+                  <div class="product-card__image">
+                    <picture>
+                      <source
+                        srcset="
+                          img/products/galaxy-earrings.webp,
+                          img/products/galaxy-earrings@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/products/galaxy-earrings.jpg"
+                        srcset="img/products/galaxy-earrings.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="purple pendant"
+                      />
+                    </picture>
+                  </div>
+                  <h3>Galaxy earrings</h3>
+                  <p>$ 95</p>
+                </a>
+              </article>
+            </li>
+
+            <li class="showcase__item splide__slide">
+              <article class="showcase__card product-card glide__slide">
+                <a class="product-card__wrapper" href="#">
+                  <div class="product-card__image">
+                    <picture>
+                      <source
+                        srcset="
+                          img/products/double-pearl-earrings.webp,
+                          img/products/double-pearl-earrings@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/products/double-pearl-earrings.jpg"
+                        srcset="img/products/double-pearl-earrings.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="purple pendant"
+                      />
+                    </picture>
+                  </div>
+                  <h3>Double pearl earrings</h3>
+                  <p>$ 115</p>
+                </a>
+              </article>
+            </li>
+
+            <li class="showcase__item splide__slide">
+              <article class="showcase__card product-card glide__slide">
+                <a class="product-card__wrapper" href="#">
+                  <div class="product-card__image">
+                    <picture>
+                      <source
+                        srcset="
+                          img/products/black-choker-gold-bead.webp,
+                          img/products/black-choker-gold-bead@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/products/black-choker-gold-bead.jpg"
+                        srcset="img/products/black-choker-gold-bead.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="purple pendant"
+                      />
+                    </picture>
+                  </div>
+                  <h3>Choker with gold bead</h3>
+                  <p>$ 55</p>
+                </a>
+              </article>
+            </li>
+
+            <li class="showcase__item splide__slide">
+              <article class="showcase__card product-card glide__slide">
+                <a class="product-card__wrapper" href="#">
+                  <div class="product-card__image">
+                    <picture>
+                      <source
+                        srcset="
+                          img/products/gold-layered-necklace.webp,
+                          img/products/gold-layered-necklace@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/products/gold-layered-necklace.jpg"
+                        srcset="img/products/gold-layered-necklace.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="purple pendant"
+                      />
+                    </picture>
+                  </div>
+                  <h3>Gold layered necklace</h3>
+                  <p>$ 155</p>
+                </a>
+              </article>
+            </li>
+
+            <li class="showcase__item splide__slide">
+              <article class="showcase__card product-card glide__slide">
+                <a class="product-card__wrapper" href="#">
+                  <div class="product-card__image">
+                    <picture>
+                      <source
+                        srcset="
+                          img/products/blue-gemstone-pendant.webp,
+                          img/products/blue-gemstone-pendant@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/products/blue-gemstone-pendant.jpg"
+                        srcset="img/products/blue-gemstone-pendant.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="purple pendant"
+                      />
+                    </picture>
+                  </div>
+                  <h3>Blue gemstone pendant</h3>
+                  <p>$ 105</p>
+                </a>
+              </article>
+            </li>
+
+            <li class="showcase__item splide__slide">
+              <article class="showcase__card product-card glide__slide">
+                <a class="product-card__wrapper" href="#">
+                  <div class="product-card__image">
+                    <picture>
+                      <source
+                        srcset="
+                          img/products/boho-earrings.webp,
+                          img/products/boho-earrings@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/products/boho-earrings.jpg"
+                        srcset="img/products/boho-earrings.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="purple pendant"
+                      />
+                    </picture>
+                  </div>
+                  <h3>Boho earrings</h3>
+                  <p>$ 75</p>
+                </a>
+              </article>
+            </li>
+
+            <li class="showcase__item splide__slide">
+              <article class="showcase__card product-card glide__slide">
+                <a class="product-card__wrapper" href="#">
+                  <div class="product-card__image">
+                    <picture>
+                      <source
+                        srcset="
+                          img/products/bird-necklace.webp,
+                          img/products/bird-necklace@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/products/bird-necklace.jpg"
+                        srcset="img/products/bird-necklace.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="purple pendant"
+                      />
+                    </picture>
+                  </div>
+                  <h3>Gold bird necklace</h3>
+                  <p>$ 135</p>
+                </a>
+              </article>
+            </li>
+
+            <li class="showcase__item splide__slide">
+              <article class="showcase__card product-card glide__slide">
+                <a class="product-card__wrapper" href="#">
+                  <div class="product-card__image">
+                    <picture>
+                      <source
+                        srcset="
+                          img/products/black-leather-choker-necklace.webp,
+                          img/products/black-leather-choker-necklace@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/products/black-leather-choker-necklace.jpg"
+                        srcset="
+                          img/products/black-leather-choker-necklace.jpg 2x
+                        "
+                        width="270"
+                        height="284"
+                        alt="purple pendant"
+                      />
+                    </picture>
+                  </div>
+                  <h3>Black leather choker</h3>
+                  <p>$ 85</p>
+                </a>
+              </article>
+            </li>
+
+            <li class="showcase__item splide__slide">
+              <article class="showcase__card product-card glide__slide">
+                <a class="product-card__wrapper" href="#">
+                  <div class="product-card__image">
+                    <picture>
+                      <source
+                        srcset="
+                          img/products/elephant-earrings.webp,
+                          img/products/elephant-earrings@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/products/elephant-earrings.jpg"
+                        srcset="img/products/elephant-earrings.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="purple pendant"
+                      />
+                    </picture>
+                  </div>
+                  <h3>Elephant earrings</h3>
+                  <p>$ 95</p>
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page__footer footer">
       <div class="footer__container container">
         <div class="footer__subscribe subscribe">
           <p>The good stuff in&nbsp;your inbox</p>

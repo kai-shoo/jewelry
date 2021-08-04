@@ -1,5 +1,6 @@
 "use strict";
 @include("./files/menu.js", {});
+@include("./files/slider.js", {});
 @include("./files/input.js", {});
 @include("./files/accordion.js", {});
 @include("./files/smooth-scroll.js", {});
