@@ -1,8 +1,10 @@
 .showcase {
   padding-top: 93px;
+  margin-bottom: 82px;
 
   @media (max-width: $tablet) {
     padding-top: 42px;
+    margin-bottom: 30px;
   }
 
   @media (max-width: $mobile) {
@@ -28,31 +30,12 @@
 .showcase__header h2 {
   margin-bottom: 24px;
 
-  font-family: $font-family-ui;
-  font-weight: bold;
-  font-size: 34px;
-  line-height: 130%;
-  text-align: center;
-  text-transform: capitalize;
-  color: $primary;
-
   @media (max-width: $tablet) {
     margin-bottom: 20px;
   }
 }
 
 .showcase__link-shop {
-  position: relative;
-
-  text-transform: capitalize;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 130%;
-  text-align: center;
-  color: $primary;
-
-  border-bottom: 1px solid $accent;
-
   @media (max-width: $tablet) {
     padding-bottom: 4px;
   }

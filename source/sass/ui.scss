@@ -24,3 +24,25 @@
   border: 0;
   clip: rect(0, 0, 0, 0);
 }
+
+.heading > h2 {
+  font-family: $font-family-ui;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+  text-align: center;
+  text-transform: capitalize;
+  color: $primary;
+}
+
+.link {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: $primary;
+  text-align: center;
+
+  border-bottom: 1px solid $accent;
+}
