@@ -1677,9 +1677,13 @@ a {
   padding-top: 24px;
   padding-bottom: 24px;
   margin-bottom: 95px; }
+  @media (max-width: 1023px) {
+    .blog {
+      margin-bottom: 46px; } }
   @media (max-width: 767px) {
     .blog {
-      padding-top: 15px; } }
+      padding-top: 15px;
+      margin-bottom: 36px; } }
 
 .blog__header {
   margin-bottom: 63px; }
@@ -1804,11 +1808,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 44px 24px 44px 42px; }
+  padding: 44px 48px 44px 42px; }
   .faq__trigger::after, .faq__trigger::before,
   .is-active .faq__trigger::after,
   .is-active .faq__trigger::before {
     content: none; }
+  @media (max-width: 1023px) {
+    .faq__trigger {
+      padding-left: 49px; } }
+  @media (max-width: 767px) {
+    .faq__trigger {
+      padding: 18px 23px 19px 23px; } }
 
 .faq__button-text {
   -webkit-box-flex: 1;
@@ -1818,17 +1828,42 @@ a {
   font-weight: 500;
   font-size: 18px;
   line-height: 130%; }
+  @media (max-width: 767px) {
+    .faq__button-text {
+      margin-right: 35px;
+      font-size: 16px;
+      line-height: 140%; } }
 
 .faq__content {
   padding: 0 0 0 49px;
   max-width: 570px;
   -webkit-transform: translateY(-36px);
           transform: translateY(-36px); }
+  @media (max-width: 1023px) {
+    .faq__content {
+      max-width: 580px;
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px); } }
+  @media (max-width: 767px) {
+    .faq__content {
+      padding-left: 24px;
+      max-width: 80%;
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px); } }
   .is-active .faq__content {
     margin-bottom: 5px; }
+    @media (max-width: 1023px) {
+      .is-active .faq__content {
+        margin-bottom: 25px; } }
+    @media (max-width: 767px) {
+      .is-active .faq__content {
+        margin-bottom: 17px; } }
 
 .faq__heading {
   margin-bottom: 49px; }
+  @media (max-width: 767px) {
+    .faq__heading {
+      margin-bottom: 28px; } }
 
 .faq__heading h2 {
   margin: 0;
@@ -1851,8 +1886,16 @@ a {
 .faq__trigger svg {
   fill: none;
   stroke: #a87b62; }
+  @media (max-width: 1023px) {
+    .faq__trigger svg {
+      width: 23px;
+      height: 12px; } }
 
 .faq__content p {
   margin: 0;
   font-size: 16px;
   line-height: 130%; }
+  @media (max-width: 767px) {
+    .faq__content p {
+      font-size: 14px;
+      line-height: 140%; } }
