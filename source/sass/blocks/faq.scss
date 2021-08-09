@@ -19,13 +19,21 @@
 .faq__trigger {
   display: flex;
 
-  padding: 44px 24px 44px 42px;
+  padding: 44px 48px 44px 42px;
 
   &::after,
   &::before,
   .is-active &::after,
   .is-active &::before {
     content: none;
+  }
+
+  @media (max-width: $tablet) {
+    padding-left: 49px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 18px 23px 19px 23px;
   }
 }
 
@@ -36,6 +44,12 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 130%;
+
+  @media (max-width: $mobile) {
+    margin-right: 35px;
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
 
 .faq__content {
@@ -43,8 +57,29 @@
   max-width: 570px;
   transform: translateY(-36px);
 
+  @media (max-width: $tablet) {
+    max-width: 580px;
+
+    transform: translateY(-20px);
+  }
+
+  @media (max-width: $mobile) {
+    padding-left: 24px;
+    max-width: 80%;
+
+    transform: translateY(-4px);
+  }
+
   .is-active & {
     margin-bottom: 5px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 25px;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 17px;
+    }
   }
 }
 
@@ -53,6 +88,10 @@
 
 .faq__heading {
   margin-bottom: 49px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 28px;
+  }
 }
 
 .faq__heading h2 {
@@ -77,10 +116,20 @@
 .faq__trigger svg {
   fill: none;
   stroke: $accent;
+
+  @media (max-width: $tablet) {
+    width: 23px;
+    height: 12px;
+  }
 }
 
 .faq__content p {
   margin: 0;
   font-size: 16px;
   line-height: 130%;
+
+  @media (max-width: $mobile) {
+    font-size: 14px;
+    line-height: 140%;
+  }
 }

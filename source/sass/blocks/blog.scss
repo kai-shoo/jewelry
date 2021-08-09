@@ -6,8 +6,13 @@
   padding-bottom: 24px;
   margin-bottom: 95px;
 
+  @media (max-width: $tablet) {
+    margin-bottom: 46px;
+  }
+
   @media (max-width: $mobile) {
     padding-top: 15px;
+    margin-bottom: 36px;
   }
 }
 
