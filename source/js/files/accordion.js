@@ -2,5 +2,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 (function () {
-  const contactsAccordion = new Accordion(`.accordion-container`);
+  const contactsAccordion = new Accordion(`.accordion-container`, {
+    openOnInit: [0],
+  });
 })();

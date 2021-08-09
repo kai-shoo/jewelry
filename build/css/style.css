@@ -131,6 +131,7 @@ a {
   color: #1d1613; }
 
 .link {
+  font-family: "Poppins", "Courier", sans-serif;
   text-transform: capitalize;
   font-weight: 500;
   font-size: 16px;
@@ -172,7 +173,6 @@ a {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  margin-top: 0;
   margin-bottom: 0; }
 
 .toggle {
