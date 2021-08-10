@@ -1,0 +1,17 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+.checkbox__box {
+  margin-right: 11px;
+  width: 15px;
+  height: 15px;
+
+  border: 1px solid $accent;
+
+  .checkbox input:checked + & {
+    background-color: $accent;
+  }
+}
+.checkbox__label {
+}

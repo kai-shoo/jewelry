@@ -4,6 +4,10 @@
 
   width: 100%;
   height: 463px;
+
+  &--catalog {
+    height: 261px;
+  }
 }
 
 .hero__image {
@@ -14,6 +18,10 @@
 
   .hero--main & {
     max-height: 463px;
+  }
+
+  .hero--catalog & {
+    max-height: 261px;
   }
 
   &::after {
@@ -58,6 +66,12 @@
   @media (max-width: $mobile) {
     font-size: 38px;
   }
+
+  .hero--catalog & {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 130%;
+  }
 }
 
 .hero__content p {
@@ -72,5 +86,12 @@
 
   @media (max-width: $mobile) {
     font-size: 34px;
+  }
+
+  .hero--catalog & {
+    font-size: 22px;
+    font-family: Cormorant Garamond;
+    font-weight: 500;
+    font-size: 22px;
   }
 }

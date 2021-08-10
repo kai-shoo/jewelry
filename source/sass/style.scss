@@ -5,6 +5,7 @@
 @import "ui.scss";
 @import "blocks/page.scss";
 
+// Main page
 @import "blocks/toggle.scss";
 @import "blocks/logo.scss";
 @import "blocks/nav.scss";
@@ -18,8 +19,8 @@
 
 @import "blocks/hero.scss";
 @import "vendors/splide.scss";
-@import "blocks/showcase.scss";
 @import "blocks/product-card.scss";
+@import "blocks/showcase.scss";
 
 @import "blocks/article-preview.scss";
 @import "blocks/blog.scss";
@@ -28,3 +29,13 @@
 @import "blocks/faq.scss";
 
 @import "blocks/instagram-preview.scss";
+
+// Catalog Page
+@import "blocks/catalog.scss";
+@import "blocks/filter.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/slider.scss";
+@import "blocks/product-list.scss";
+@import "blocks/pagination.scss";
+
+@import "blocks/page-catalog.scss";

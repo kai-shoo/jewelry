@@ -1,0 +1,104 @@
+.filter {
+  width: 100%;
+}
+
+.filter__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__container {
+  border: 1px solid $accent;
+}
+
+.filter__item {
+  margin: 0;
+  border: 0;
+
+  &:not(:first-child) {
+    border-top: 1px solid $accent;
+  }
+}
+
+.filter__trigger {
+  display: flex;
+  padding: 25px 23px 23px 25px;
+
+  &::after,
+  &::before,
+  .is-active &::after,
+  .is-active &::before {
+    content: none;
+  }
+}
+
+.filter__button-text {
+  flex-grow: 1;
+}
+
+.filter__icon {
+  transition: transform 0.2s ease-out;
+
+  .is-active & {
+    transform: rotate(180deg);
+  }
+}
+
+.filter__trigger svg {
+  fill: none;
+  stroke: $accent;
+
+  @media (max-width: $tablet) {
+    width: 23px;
+    height: 12px;
+  }
+}
+
+.filter__checkbox {
+  margin-bottom: 12px;
+
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+
+  &:last-child {
+    margin-bottom: 29px;
+  }
+}
+
+.filter__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__button {
+  padding: 28px 16px;
+  margin-bottom: 25px;
+
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: $primary;
+  text-align: center;
+
+  border: 1px solid $accent;
+  background: $white;
+
+  appearance: none;
+  cursor: pointer;
+
+  &--filled {
+    background: $accent;
+    color: $white;
+  }
+}
+
+.filter__panel {
+  padding: 0 1px 0 34px;
+}
+
+.filter__slider {
+  margin-top: -3px;
+}

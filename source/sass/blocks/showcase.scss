@@ -43,4 +43,25 @@
 
 .showcase__item {
   padding-top: 24px;
+  min-height: 388px;
+
+  @media (max-width: $tablet) {
+    min-height: 444px;
+  }
+
+  @media (max-width: $mobile) {
+    min-height: 256px;
+  }
+}
+
+.showcase__image {
+  max-height: 284px;
+
+  @media (max-width: $tablet) {
+    max-height: 340px;
+  }
+
+  @media (max-width: $mobile) {
+    max-height: 136px;
+  }
 }

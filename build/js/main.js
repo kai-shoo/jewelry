@@ -38,20 +38,23 @@
 /* eslint-disable new-cap */
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-new Splide(`.splide`, {
-  type: `loop`,
-  perPage: 4,
-  perMove: 4,
-  arrowPath: `M5 19.5H34M34 19.5L28.5135 15M34 19.5L28.5135 24`,
-  gap: `30px`,
-  trimSpace: true,
-  breakpoints: {
-    1024: {
-      perPage: 2,
-      perMove: 2,
+const isExist = document.querySelector(`.splide`);
+if (isExist) {
+  new Splide(`.splide`, {
+    type: `loop`,
+    perPage: 4,
+    perMove: 4,
+    arrowPath: `M5 19.5H34M34 19.5L28.5135 15M34 19.5L28.5135 24`,
+    gap: `30px`,
+    trimSpace: true,
+    breakpoints: {
+      1024: {
+        perPage: 2,
+        perMove: 2,
+      },
     },
-  },
-}).mount();
+  }).mount();
+}
 ;
 /* eslint-disable new-cap */
 /* eslint-disable no-undef */
@@ -93,9 +96,21 @@ new Splide(`.splide`, {
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 (function () {
-  const contactsAccordion = new Accordion(`.accordion-container`, {
-    openOnInit: [0],
-  });
+  const isForm = document.querySelector(`.accordion-container-form`);
+  const isAccordion = document.querySelector(`.accordion-container`);
+
+  if (isAccordion) {
+    const contactsAccordion = new Accordion(`.accordion-container`, {
+      openOnInit: [0],
+    });
+  }
+
+  if (isForm) {
+    const contactsAccordion = new Accordion(`.accordion-container-form`, {
+      openOnInit: [0, 3],
+      showMultiple: true,
+    });
+  }
 })();
 ;
 (function () {

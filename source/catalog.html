@@ -11,7 +11,7 @@
     <title>Стартовый шаблон</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-  <body class="page page--nojs">
+  <body class="page page--nojs page-catalog">
     <header class="page__header header container">
       <div class="header__toggle toggle">
         <button class="toggle__button" aria-label="toggle menu" type="button">
@@ -75,18 +75,21 @@
       </div>
     </header>
 
-    <main>
-      <section class="hero hero--main">
+    <main class="page__main">
+      <section class="hero hero--catalog page-catalog__hero">
         <div class="hero__image">
           <!-- 1х: 1366px; 2x: 2732px -->
           <picture>
             <source
-              srcset="img/hero/hero-main.webp, img/hero/hero-main@2x.webp 2x"
+              srcset="
+                img/hero/hero-catalog.webp,
+                img/hero/hero-catalog@2x.webp 2x
+              "
               type="image/webp"
             />
             <img
-              src="img/hero/hero-main.jpg"
-              srcset="img/hero/hero-main.jpg 2x"
+              src="img/hero/hero-catalog.jpg"
+              srcset="img/hero/hero-catalog.jpg 2x"
               width="1366"
               height="453"
               alt="several beautiful necklaces on the neckline of a girl in a white blouse"
@@ -94,24 +97,179 @@
           </picture>
         </div>
         <div class="hero__content">
-          <h2>Perfection</h2>
-          <p>Made to be yours</p>
+          <h2>All jewellery</h2>
+          <p>
+            Discover picks of fashion's finest trends in our jewellery catalog
+          </p>
         </div>
       </section>
+      <div class="catalog container">
+        <section class="catalog__filter filter">
+          <form class="filter__form" action="echo.htmlacademy.ru" method="POST">
+            <div class="filter__container accordion-container-form">
+              <div class="ac filter__item">
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger filter__trigger">
+                    <span class="filter__button-text">Product</span>
+                    <div class="filter__icon">
+                      <svg width="17" height="10">
+                        <use xlink:href="img/sprite_auto.svg#icon-switch" />
+                      </svg>
+                    </div>
+                  </button>
+                </h2>
+                <div class="ac-panel filter__panel">
+                  <label class="filter__checkbox checkbox">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      name="necklaces"
+                      checked
+                    />
+                    <div class="checkbox__box"></div>
+                    <span class="checkbox__label">Necklaces</span>
+                  </label>
+                  <label class="filter__checkbox checkbox">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      name="chokers"
+                      checked
+                    />
+                    <div class="checkbox__box"></div>
+                    <span class="checkbox__label">Chokers</span>
+                  </label>
+                  <label class="filter__checkbox checkbox">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      name="rings"
+                    />
+                    <div class="checkbox__box"></div>
+                    <span class="checkbox__label">Rings</span>
+                  </label>
+                  <label class="filter__checkbox checkbox">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      name="earrings"
+                      checked
+                    />
+                    <div class="checkbox__box"></div>
+                    <span class="checkbox__label">Earrings</span>
+                  </label>
+                </div>
+              </div>
+              <div class="ac filter__item">
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger filter__trigger">
+                    <span class="filter__button-text">Material</span>
+                    <div class="filter__icon">
+                      <svg width="17" height="10">
+                        <use xlink:href="img/sprite_auto.svg#icon-switch" />
+                      </svg>
+                    </div>
+                  </button>
+                </h2>
+                <div class="ac-panel filter__panel">
+                  <label class="filter__checkbox checkbox">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      name="gold"
+                      checked
+                    />
+                    <div class="checkbox__box"></div>
+                    <span class="checkbox__label">Gold</span>
+                  </label>
+                  <label class="filter__checkbox checkbox">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      name="silver"
+                      checked
+                    />
+                    <div class="checkbox__box"></div>
+                    <span class="checkbox__label">Silver</span>
+                  </label>
+                </div>
+              </div>
+              <div class="ac filter__item">
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger filter__trigger">
+                    <span class="filter__button-text">Collection</span>
+                    <div class="filter__icon">
+                      <svg width="17" height="10">
+                        <use xlink:href="img/sprite_auto.svg#icon-switch" />
+                      </svg>
+                    </div>
+                  </button>
+                </h2>
+                <div class="ac-panel filter__panel">
+                  <label class="filter__checkbox checkbox">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      name="pink-flamingo"
+                      checked
+                    />
+                    <div class="checkbox__box"></div>
+                    <span class="checkbox__label">Pink flamingo</span>
+                  </label>
+                  <label class="filter__checkbox checkbox">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      name="dreams"
+                      checked
+                    />
+                    <div class="checkbox__box"></div>
+                    <span class="checkbox__label">Dreams</span>
+                  </label>
+                </div>
+              </div>
+              <div class="ac filter__item">
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger filter__trigger">
+                    <span class="filter__button-text">Price</span>
+                    <div class="filter__icon">
+                      <svg width="17" height="10">
+                        <use xlink:href="img/sprite_auto.svg#icon-switch" />
+                      </svg>
+                    </div>
+                  </button>
+                </h2>
+                <div class="ac-panel filter__panel">
+                  <div class="filter__slider slider">
+                    <div class="slider__track"></div>
+                    <div class="slider__handle-1" data-value="55"></div>
+                    <div class="slider__range"></div>
+                    <div class="slider__handle-2" data-value="155"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      <section class="showcase container splide">
-        <div class="showcase__header heading">
-          <h2>New in</h2>
-          <a class="showcase__link-shop link" href="#"
-            ><span class="showcase__link-inner">Shop now</span></a
-          >
-        </div>
-        <div class="splide__track">
-          <ul class="showcase__list splide__list">
-            <li class="showcase__item splide__slide">
-              <article class="showcase__card product-card">
+            <div class="filter__buttons">
+              <button
+                class="filter__button filter__button--filled"
+                type="submit"
+              >
+                Apply
+              </button>
+              <button class="filter__button" type="button">Clear All</button>
+            </div>
+          </form>
+        </section>
+        <section class="catalog__product-list product-list">
+          <h2 class="visually-hidden">List of products</h2>
+          <ul class="product-list__list">
+            <li class="product-list__item">
+              <article
+                class="product-list__card product-card product-card--catalog"
+              >
                 <a class="product-card__wrapper" href="#">
-                  <div class="product-card__image showcase__image">
+                  <div class="product-card__image product-list__image">
                     <picture>
                       <source
                         srcset="
@@ -135,10 +293,12 @@
               </article>
             </li>
 
-            <li class="showcase__item splide__slide">
-              <article class="showcase__card product-card">
+            <li class="product-list__item">
+              <article
+                class="product-list__card product-card product-card--catalog"
+              >
                 <a class="product-card__wrapper" href="#">
-                  <div class="product-card__image showcase__image">
+                  <div class="product-card__image product-list__card-image">
                     <picture>
                       <source
                         srcset="
@@ -156,16 +316,18 @@
                       />
                     </picture>
                   </div>
-                  <h3>Layered choker</h3>
+                  <h3>Layered сhoker</h3>
                   <p>$ 115</p>
                 </a>
               </article>
             </li>
 
-            <li class="showcase__item splide__slide">
-              <article class="showcase__card product-card">
+            <li class="product-list__item">
+              <article
+                class="product-list__card product-card product-card--catalog"
+              >
                 <a class="product-card__wrapper" href="#">
-                  <div class="product-card__image showcase__image">
+                  <div class="product-card__image product-list__image">
                     <picture>
                       <source
                         srcset="
@@ -189,10 +351,12 @@
               </article>
             </li>
 
-            <li class="showcase__item splide__slide">
-              <article class="showcase__card product-card">
+            <li class="product-list__item">
+              <article
+                class="product-list__card product-card product-card--catalog"
+              >
                 <a class="product-card__wrapper" href="#">
-                  <div class="product-card__image showcase__image">
+                  <div class="product-card__image product-list__image">
                     <picture>
                       <source
                         srcset="
@@ -216,10 +380,12 @@
               </article>
             </li>
 
-            <li class="showcase__item splide__slide">
-              <article class="showcase__card product-card">
+            <li class="product-list__item">
+              <article
+                class="product-list__card product-card product-card--catalog"
+              >
                 <a class="product-card__wrapper" href="#">
-                  <div class="product-card__image showcase__image">
+                  <div class="product-card__image product-list__image">
                     <picture>
                       <source
                         srcset="
@@ -243,10 +409,12 @@
               </article>
             </li>
 
-            <li class="showcase__item splide__slide">
-              <article class="showcase__card product-card">
+            <li class="product-list__item">
+              <article
+                class="product-list__card product-card product-card--catalog"
+              >
                 <a class="product-card__wrapper" href="#">
-                  <div class="product-card__image showcase__image">
+                  <div class="product-card__image product-list__image">
                     <picture>
                       <source
                         srcset="
@@ -270,10 +438,12 @@
               </article>
             </li>
 
-            <li class="showcase__item splide__slide">
-              <article class="showcase__card product-card">
+            <li class="product-list__item">
+              <article
+                class="product-list__card product-card product-card--catalog"
+              >
                 <a class="product-card__wrapper" href="#">
-                  <div class="product-card__image showcase__image">
+                  <div class="product-card__image product-list__image">
                     <picture>
                       <source
                         srcset="
@@ -297,10 +467,12 @@
               </article>
             </li>
 
-            <li class="showcase__item splide__slide">
-              <article class="showcase__card product-card">
+            <li class="product-list__item">
+              <article
+                class="product-list__card product-card product-card--catalog"
+              >
                 <a class="product-card__wrapper" href="#">
-                  <div class="product-card__image showcase__image">
+                  <div class="product-card__image product-list__image">
                     <picture>
                       <source
                         srcset="
@@ -324,10 +496,12 @@
               </article>
             </li>
 
-            <li class="showcase__item splide__slide">
-              <article class="showcase__card product-card">
+            <li class="product-list__item">
+              <article
+                class="product-list__card product-card product-card--catalog"
+              >
                 <a class="product-card__wrapper" href="#">
-                  <div class="product-card__image showcase__image">
+                  <div class="product-card__image product-list__image">
                     <picture>
                       <source
                         srcset="
@@ -351,10 +525,12 @@
               </article>
             </li>
 
-            <li class="showcase__item splide__slide">
-              <article class="showcase__card product-card">
+            <li class="product-list__item">
+              <article
+                class="product-list__card product-card product-card--catalog"
+              >
                 <a class="product-card__wrapper" href="#">
-                  <div class="product-card__image showcase__image">
+                  <div class="product-card__image product-list__image">
                     <picture>
                       <source
                         srcset="
@@ -378,10 +554,12 @@
               </article>
             </li>
 
-            <li class="showcase__item splide__slide">
-              <article class="showcase__card product-card">
+            <li class="product-list__item">
+              <article
+                class="product-list__card product-card product-card--catalog"
+              >
                 <a class="product-card__wrapper" href="#">
-                  <div class="product-card__image showcase__image">
+                  <div class="product-card__image product-list__image">
                     <picture>
                       <source
                         srcset="
@@ -407,10 +585,12 @@
               </article>
             </li>
 
-            <li class="showcase__item splide__slide">
-              <article class="showcase__card product-card">
+            <li class="product-list__item">
+              <article
+                class="product-list__card product-card product-card--catalog"
+              >
                 <a class="product-card__wrapper" href="#">
-                  <div class="product-card__image showcase__image">
+                  <div class="product-card__image product-list__image">
                     <picture>
                       <source
                         srcset="
@@ -434,325 +614,40 @@
               </article>
             </li>
           </ul>
-        </div>
-      </section>
-
-      <section class="blog container">
-        <div class="blog__header heading">
-          <h2>Blog</h2>
-          <a class="blog__link-blog link" href="#">Read All</a>
-        </div>
-
-        <ul class="blog__list">
-          <li class="blog__item article-preview">
-            <article class="article-preview__container">
-              <div class="article-preview__image-wrapper">
-                <picture>
-                  <source
-                    srcset="
-                      img/articles/preview-article-1.webp 1x,
-                      img/articles/preview-article-1.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <img
-                    src="img/articles/preview-article-1.jpg"
-                    srcset="img/articles/preview-article-1.jpg 2x"
-                    width="285"
-                    height="300"
-                    alt="beautiful necklace on the sheet"
-                  />
-                </picture>
-              </div>
-              <div class="article-preview__card">
-                <time datetime="2019-30-09">September 30, 2019</time>
-                <h3 class="article-preview__title">
-                  How to care for your jewellery
-                </h3>
-                <a class="article-preview__link link" href="#">Read article</a>
-              </div>
-            </article>
-          </li>
-
-          <li class="blog__item article-preview">
-            <article class="article-preview__container">
-              <div class="article-preview__image-wrapper">
-                <picture>
-                  <source
-                    srcset="
-                      img/articles/preview-article-2.webp 1x,
-                      img/articles/preview-article-2.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <img
-                    src="img/articles/preview-article-2.jpg"
-                    srcset="img/articles/preview-article-2.jpg 2x"
-                    width="285"
-                    height="300"
-                    alt="gold jewelry adorned with beautiful pink stones"
-                  />
-                </picture>
-              </div>
-              <div class="article-preview__card">
-                <time datetime="2019-23-09">September 23, 2019</time>
-                <h3 class="article-preview__title">Power of crystals</h3>
-                <a class="article-preview__link link" href="#">Read article</a>
-              </div>
-            </article>
-          </li>
-
-          <li class="blog__item article-preview article-preview--big">
-            <article class="article-preview__container">
-              <div class="article-preview__image-wrapper">
-                <picture>
-                  <source
-                    srcset="
-                      img/articles/preview-article-3.webp 1x,
-                      img/articles/preview-article-3.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <img
-                    src="img/articles/preview-article-3.jpg"
-                    srcset="img/articles/preview-article-3.jpg 2x"
-                    width="570"
-                    height="630"
-                    alt="the girl's fingers are decorated with several silver rings"
-                  />
-                </picture>
-              </div>
-              <div class="article-preview__card">
-                <time datetime="2019-16-09">September 16, 2019</time>
-                <h3 class="article-preview__title">AW 19 trends</h3>
-                <a class="article-preview__link link" href="#">Read article</a>
-              </div>
-            </article>
-          </li>
-        </ul>
-      </section>
-
-      <section class="faq container">
-        <div class="faq__heading">
-          <h2>Frequently asked questions</h2>
-        </div>
-        <div class="faq__wrapper accordion-container">
-          <div class="faq__item ac">
-            <h3 class="ac-header">
-              <button class="faq__trigger ac-trigger">
-                <span class="faq__button-text"
-                  >What materials are the&nbsp;jewellery made of?</span
-                >
-                <div class="faq__icon">
-                  <svg width="17" height="10">
-                    <use xlink:href="img/sprite_auto.svg#icon-switch" />
-                  </svg>
-                </div>
-              </button>
-            </h3>
-            <div class="faq__content ac-panel">
-              <p>
-                Our jewellerry is made of solid gold, silver or leather. Also,
-                some jewellery contains precious and semiprecious stones and
-                crystals.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq__item ac">
-            <h3 class="ac-header">
-              <button class="faq__trigger ac-trigger">
-                <span class="faq__button-text"
-                  >Which countries do you deliver to?</span
-                >
-                <div class="faq__icon">
-                  <svg width="17" height="10">
-                    <use xlink:href="img/sprite_auto.svg#icon-switch" />
-                  </svg>
-                </div>
-              </button>
-            </h3>
-            <div class="faq__content ac-panel">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                error similique ex ut velit repellendus enim inventore iure!
-                Maiores tempora, nobis aliquam officiis nam qui corrupti cumque
-                corporis saepe velit?
-              </p>
-            </div>
-          </div>
-
-          <div class="faq__item ac">
-            <h3 class="ac-header">
-              <button class="faq__trigger ac-trigger">
-                <span class="faq__button-text"
-                  >What are the payment methods?</span
-                >
-                <div class="faq__icon">
-                  <svg width="17" height="10">
-                    <use xlink:href="img/sprite_auto.svg#icon-switch" />
-                  </svg>
-                </div>
-              </button>
-            </h3>
-            <div class="faq__content ac-panel">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                error similique ex ut velit repellendus enim inventore iure!
-                Maiores tempora, nobis aliquam officiis nam qui corrupti cumque
-                corporis saepe velit?
-              </p>
-            </div>
-          </div>
-
-          <div class="faq__item ac">
-            <h3 class="ac-header">
-              <button class="faq__trigger ac-trigger">
-                <span class="faq__button-text"
-                  >Can I return the jewellery if it didn’t fit me?</span
-                >
-                <div class="faq__icon">
-                  <svg width="17" height="10">
-                    <use xlink:href="img/sprite_auto.svg#icon-switch" />
-                  </svg>
-                </div>
-              </button>
-            </h3>
-            <div class="faq__content ac-panel">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                error similique ex ut velit repellendus enim inventore iure!
-                Maiores tempora, nobis aliquam officiis nam qui corrupti cumque
-                corporis saepe velit?
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="instagram-preview container">
-        <div class="instagram-preview__header heading">
-          <h2>
-            <span class="instagram-preview__pre-title">@</span>Chjewellery
-          </h2>
-          <a class="instagram-preview__link-instagram link" href="#"
-            >Follow Us</a
+        </section>
+        <section class="catalog__pagination pagination">
+          <h2 class="visually-hidden">Страницы</h2>
+          <div
+            class="pagination__button-wrapper pagination__button-wrapper--prev"
           >
-        </div>
-        <ul class="instagram-preview__list">
-          <li class="instagram-preview__item">
-            <picture>
-              <source
-                srcset="img/instagram/8.webp, img/instagram/8@2x.webp 2x"
-                type="image/webp"
-              />
-              <img
-                src="img/instagram/8.jpg"
-                srcset="img/instagram/8.jpg 2x"
-                width="230"
-                height="230"
-                alt="two lovely brooches on the sheet"
-              />
-            </picture>
-          </li>
-
-          <li class="instagram-preview__item instagram-preview__item--big">
-            <picture>
-              <source
-                srcset="img/instagram/2.webp, img/instagram/2@2x.webp 2x"
-                type="image/webp"
-              />
-              <img
-                src="img/instagram/2.jpg"
-                srcset="img/instagram/2.jpg 2x"
-                width="1366"
-                height="453"
-                alt="open neck of a girl in beige clothes, with large round earrings in her ears"
-              />
-            </picture>
-          </li>
-
-          <li class="instagram-preview__item">
-            <picture>
-              <source
-                srcset="img/instagram/4.webp, img/instagram/4@2x.webp 2x"
-                type="image/webp"
-              />
-              <img
-                src="img/instagram/4.jpg"
-                srcset="img/instagram/4.jpg 2x"
-                width="1366"
-                height="453"
-                alt="hands of a girl wrapped in a warm cashmere sweater, with several inlaid brooches on her arms"
-              />
-            </picture>
-          </li>
-
-          <li class="instagram-preview__item">
-            <picture>
-              <source
-                srcset="img/instagram/6.webp, img/instagram/6@2x.webp 2x"
-                type="image/webp"
-              />
-              <img
-                src="img/instagram/6.jpg"
-                srcset="img/instagram/6.jpg 2x"
-                width="1366"
-                height="453"
-                alt="twisted pair rings"
-              />
-            </picture>
-          </li>
-
-          <li class="instagram-preview__item">
-            <picture>
-              <source
-                srcset="img/instagram/1.webp, img/instagram/1@2x.webp 2x"
-                type="image/webp"
-              />
-              <img
-                src="img/instagram/1.jpg"
-                srcset="img/instagram/1.jpg 2x"
-                width="1366"
-                height="453"
-                alt="gold earrings piling like a vine inlaid with rare expensive precious stones"
-              />
-            </picture>
-          </li>
-
-          <li class="instagram-preview__item">
-            <picture>
-              <source
-                srcset="img/instagram/5.webp, img/instagram/5@2x.webp 2x"
-                type="image/webp"
-              />
-              <img
-                src="img/instagram/5.jpg"
-                srcset="img/instagram/5.jpg 2x"
-                width="1366"
-                height="453"
-                alt="gold jewelry on the background of a snow-white postcard"
-              />
-            </picture>
-          </li>
-
-          <li class="instagram-preview__item">
-            <picture>
-              <source
-                srcset="img/instagram/7.webp, img/instagram/7@2x.webp 2x"
-                type="image/webp"
-              />
-              <img
-                src="img/instagram/7.jpg"
-                srcset="img/instagram/7.jpg 2x"
-                width="1366"
-                height="453"
-                alt="sophisticated girl sits on the steps. Delicate hands are adorned with a golden exquisite ring"
-              />
-            </picture>
-          </li>
-        </ul>
-      </section>
+            <button class="pagination__nav-button" type="button">
+              Previous
+            </button>
+          </div>
+          <ul class="pagination__list">
+            <li class="pagination__item active">
+              <button class="pagination__item-button" type="button">1</button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__item-button" type="button">2</button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__item-button" type="button">3</button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__item-button" type="button">4</button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__item-button" type="button">5</button>
+            </li>
+          </ul>
+          <div
+            class="pagination__button-wrapper pagination__button-wrapper--next"
+          >
+            <button class="pagination__nav-button" type="button">Next</button>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="page__footer footer">
