@@ -49,6 +49,8 @@
   align-self: center;
 
   z-index: 1;
+
+  padding: 0 21px;
 }
 
 .hero__content h2 {
@@ -71,6 +73,10 @@
     font-weight: bold;
     font-size: 34px;
     line-height: 130%;
+
+    @media (max-width: $mobile) {
+      font-size: 34px;
+    }
   }
 }
 
@@ -93,5 +99,10 @@
     font-family: Cormorant Garamond;
     font-weight: 500;
     font-size: 22px;
+
+    @media (max-width: $mobile) {
+      font-size: 22px;
+      line-height: 120%;
+    }
   }
 }

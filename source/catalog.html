@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="html academy grading" />
-    <title>Стартовый шаблон</title>
+    <title>Jewellery</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="page page--nojs page-catalog">
@@ -104,282 +104,186 @@
         </div>
       </section>
       <div class="catalog container">
+        <button class="catalog__filter-button button" type="button">
+          Filter
+        </button>
         <section class="catalog__filter filter">
-          <form class="filter__form" action="echo.htmlacademy.ru" method="POST">
-            <div class="filter__container accordion-container-form">
-              <div class="ac filter__item">
-                <h2 class="ac-header">
-                  <button type="button" class="ac-trigger filter__trigger">
-                    <span class="filter__button-text">Product</span>
-                    <div class="filter__icon">
-                      <svg width="17" height="10">
-                        <use xlink:href="img/sprite_auto.svg#icon-switch" />
-                      </svg>
-                    </div>
-                  </button>
-                </h2>
-                <div class="ac-panel filter__panel">
-                  <label class="filter__checkbox checkbox">
-                    <input
-                      class="visually-hidden"
-                      type="checkbox"
-                      name="necklaces"
-                      checked
-                    />
-                    <div class="checkbox__box"></div>
-                    <span class="checkbox__label">Necklaces</span>
-                  </label>
-                  <label class="filter__checkbox checkbox">
-                    <input
-                      class="visually-hidden"
-                      type="checkbox"
-                      name="chokers"
-                      checked
-                    />
-                    <div class="checkbox__box"></div>
-                    <span class="checkbox__label">Chokers</span>
-                  </label>
-                  <label class="filter__checkbox checkbox">
-                    <input
-                      class="visually-hidden"
-                      type="checkbox"
-                      name="rings"
-                    />
-                    <div class="checkbox__box"></div>
-                    <span class="checkbox__label">Rings</span>
-                  </label>
-                  <label class="filter__checkbox checkbox">
-                    <input
-                      class="visually-hidden"
-                      type="checkbox"
-                      name="earrings"
-                      checked
-                    />
-                    <div class="checkbox__box"></div>
-                    <span class="checkbox__label">Earrings</span>
-                  </label>
+          <div class="filter__wrapper">
+            <div class="filter__button-close-container">
+              <button class="filter__button-close">Close</button>
+            </div>
+            <form
+              class="filter__form"
+              action="echo.htmlacademy.ru"
+              method="POST"
+            >
+              <div class="filter__container accordion-container-form">
+                <div class="ac filter__item">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger filter__trigger">
+                      <span class="filter__button-text">Product</span>
+                      <div class="filter__icon">
+                        <svg width="17" height="10">
+                          <use xlink:href="img/sprite_auto.svg#icon-switch" />
+                        </svg>
+                      </div>
+                    </button>
+                  </h2>
+                  <div class="ac-panel filter__panel">
+                    <label class="filter__checkbox checkbox">
+                      <input
+                        class="visually-hidden"
+                        type="checkbox"
+                        name="necklaces"
+                        checked
+                      />
+                      <div class="checkbox__box"></div>
+                      <span class="checkbox__label">Necklaces</span>
+                    </label>
+                    <label class="filter__checkbox checkbox">
+                      <input
+                        class="visually-hidden"
+                        type="checkbox"
+                        name="chokers"
+                        checked
+                      />
+                      <div class="checkbox__box"></div>
+                      <span class="checkbox__label">Chokers</span>
+                    </label>
+                    <label class="filter__checkbox checkbox">
+                      <input
+                        class="visually-hidden"
+                        type="checkbox"
+                        name="rings"
+                      />
+                      <div class="checkbox__box"></div>
+                      <span class="checkbox__label">Rings</span>
+                    </label>
+                    <label class="filter__checkbox checkbox">
+                      <input
+                        class="visually-hidden"
+                        type="checkbox"
+                        name="earrings"
+                        checked
+                      />
+                      <div class="checkbox__box"></div>
+                      <span class="checkbox__label">Earrings</span>
+                    </label>
+                  </div>
                 </div>
-              </div>
-              <div class="ac filter__item">
-                <h2 class="ac-header">
-                  <button type="button" class="ac-trigger filter__trigger">
-                    <span class="filter__button-text">Material</span>
-                    <div class="filter__icon">
-                      <svg width="17" height="10">
-                        <use xlink:href="img/sprite_auto.svg#icon-switch" />
-                      </svg>
-                    </div>
-                  </button>
-                </h2>
-                <div class="ac-panel filter__panel">
-                  <label class="filter__checkbox checkbox">
-                    <input
-                      class="visually-hidden"
-                      type="checkbox"
-                      name="gold"
-                      checked
-                    />
-                    <div class="checkbox__box"></div>
-                    <span class="checkbox__label">Gold</span>
-                  </label>
-                  <label class="filter__checkbox checkbox">
-                    <input
-                      class="visually-hidden"
-                      type="checkbox"
-                      name="silver"
-                      checked
-                    />
-                    <div class="checkbox__box"></div>
-                    <span class="checkbox__label">Silver</span>
-                  </label>
+                <div class="ac filter__item">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger filter__trigger">
+                      <span class="filter__button-text">Material</span>
+                      <div class="filter__icon">
+                        <svg width="17" height="10">
+                          <use xlink:href="img/sprite_auto.svg#icon-switch" />
+                        </svg>
+                      </div>
+                    </button>
+                  </h2>
+                  <div class="ac-panel filter__panel">
+                    <label class="filter__checkbox checkbox">
+                      <input
+                        class="visually-hidden"
+                        type="checkbox"
+                        name="gold"
+                        checked
+                      />
+                      <div class="checkbox__box"></div>
+                      <span class="checkbox__label">Gold</span>
+                    </label>
+                    <label class="filter__checkbox checkbox">
+                      <input
+                        class="visually-hidden"
+                        type="checkbox"
+                        name="silver"
+                        checked
+                      />
+                      <div class="checkbox__box"></div>
+                      <span class="checkbox__label">Silver</span>
+                    </label>
+                  </div>
                 </div>
-              </div>
-              <div class="ac filter__item">
-                <h2 class="ac-header">
-                  <button type="button" class="ac-trigger filter__trigger">
-                    <span class="filter__button-text">Collection</span>
-                    <div class="filter__icon">
-                      <svg width="17" height="10">
-                        <use xlink:href="img/sprite_auto.svg#icon-switch" />
-                      </svg>
-                    </div>
-                  </button>
-                </h2>
-                <div class="ac-panel filter__panel">
-                  <label class="filter__checkbox checkbox">
-                    <input
-                      class="visually-hidden"
-                      type="checkbox"
-                      name="pink-flamingo"
-                      checked
-                    />
-                    <div class="checkbox__box"></div>
-                    <span class="checkbox__label">Pink flamingo</span>
-                  </label>
-                  <label class="filter__checkbox checkbox">
-                    <input
-                      class="visually-hidden"
-                      type="checkbox"
-                      name="dreams"
-                      checked
-                    />
-                    <div class="checkbox__box"></div>
-                    <span class="checkbox__label">Dreams</span>
-                  </label>
+                <div class="ac filter__item">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger filter__trigger">
+                      <span class="filter__button-text">Collection</span>
+                      <div class="filter__icon">
+                        <svg width="17" height="10">
+                          <use xlink:href="img/sprite_auto.svg#icon-switch" />
+                        </svg>
+                      </div>
+                    </button>
+                  </h2>
+                  <div class="ac-panel filter__panel">
+                    <label class="filter__checkbox checkbox">
+                      <input
+                        class="visually-hidden"
+                        type="checkbox"
+                        name="pink-flamingo"
+                        checked
+                      />
+                      <div class="checkbox__box"></div>
+                      <span class="checkbox__label">Pink flamingo</span>
+                    </label>
+                    <label class="filter__checkbox checkbox">
+                      <input
+                        class="visually-hidden"
+                        type="checkbox"
+                        name="dreams"
+                        checked
+                      />
+                      <div class="checkbox__box"></div>
+                      <span class="checkbox__label">Dreams</span>
+                    </label>
+                  </div>
                 </div>
-              </div>
-              <div class="ac filter__item">
-                <h2 class="ac-header">
-                  <button type="button" class="ac-trigger filter__trigger">
-                    <span class="filter__button-text">Price</span>
-                    <div class="filter__icon">
-                      <svg width="17" height="10">
-                        <use xlink:href="img/sprite_auto.svg#icon-switch" />
-                      </svg>
+                <div class="ac filter__item">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger filter__trigger">
+                      <span class="filter__button-text">Price</span>
+                      <div class="filter__icon">
+                        <svg width="17" height="10">
+                          <use xlink:href="img/sprite_auto.svg#icon-switch" />
+                        </svg>
+                      </div>
+                    </button>
+                  </h2>
+                  <div class="ac-panel filter__panel">
+                    <div class="filter__slider">
+                      <div class="filter__slider-container slider">
+                        <div class="slider__track"></div>
+                        <div class="slider__handle-1" data-value="55"></div>
+                        <div class="slider__range"></div>
+                        <div class="slider__handle-2" data-value="155"></div>
+                      </div>
                     </div>
-                  </button>
-                </h2>
-                <div class="ac-panel filter__panel">
-                  <div class="filter__slider slider">
-                    <div class="slider__track"></div>
-                    <div class="slider__handle-1" data-value="55"></div>
-                    <div class="slider__range"></div>
-                    <div class="slider__handle-2" data-value="155"></div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="filter__buttons">
-              <button
-                class="filter__button filter__button--filled"
-                type="submit"
-              >
-                Apply
-              </button>
-              <button class="filter__button" type="button">Clear All</button>
-            </div>
-          </form>
+              <div class="filter__buttons">
+                <button
+                  class="
+                    filter__button filter__button--filled filter__button--apply
+                  "
+                  type="submit"
+                >
+                  Apply
+                </button>
+                <button
+                  class="filter__button filter__button--clear"
+                  type="button"
+                >
+                  Clear All
+                </button>
+              </div>
+            </form>
+          </div>
         </section>
         <section class="catalog__product-list product-list">
           <h2 class="visually-hidden">List of products</h2>
           <ul class="product-list__list">
-            <li class="product-list__item">
-              <article
-                class="product-list__card product-card product-card--catalog"
-              >
-                <a class="product-card__wrapper" href="#">
-                  <div class="product-card__image product-list__image">
-                    <picture>
-                      <source
-                        srcset="
-                          img/products/gemstone-necklace.webp,
-                          img/products/gemstone-necklace@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        src="img/products/gemstone-necklace.jpg"
-                        srcset="img/products/gemstone-necklace.jpg 2x"
-                        width="270"
-                        height="284"
-                        alt="purple pendant"
-                      />
-                    </picture>
-                  </div>
-                  <h3>Necklace with amethyst</h3>
-                  <p>$ 145</p>
-                </a>
-              </article>
-            </li>
-
-            <li class="product-list__item">
-              <article
-                class="product-list__card product-card product-card--catalog"
-              >
-                <a class="product-card__wrapper" href="#">
-                  <div class="product-card__image product-list__card-image">
-                    <picture>
-                      <source
-                        srcset="
-                          img/products/layered-choker-necklace.webp,
-                          img/products/layered-choker-necklace@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        src="img/products/layered-choker-necklace.jpg"
-                        srcset="img/products/layered-choker-necklace.jpg 2x"
-                        width="270"
-                        height="284"
-                        alt="purple pendant"
-                      />
-                    </picture>
-                  </div>
-                  <h3>Layered сhoker</h3>
-                  <p>$ 115</p>
-                </a>
-              </article>
-            </li>
-
-            <li class="product-list__item">
-              <article
-                class="product-list__card product-card product-card--catalog"
-              >
-                <a class="product-card__wrapper" href="#">
-                  <div class="product-card__image product-list__image">
-                    <picture>
-                      <source
-                        srcset="
-                          img/products/dainty-gold-necklace.webp,
-                          img/products/dainty-gold-necklace@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        src="img/products/dainty-gold-necklace.jpg"
-                        srcset="img/products/dainty-gold-necklace.jpg 2x"
-                        width="270"
-                        height="284"
-                        alt="purple pendant"
-                      />
-                    </picture>
-                  </div>
-                  <h3>Gold chain</h3>
-                  <p>$ 215</p>
-                </a>
-              </article>
-            </li>
-
-            <li class="product-list__item">
-              <article
-                class="product-list__card product-card product-card--catalog"
-              >
-                <a class="product-card__wrapper" href="#">
-                  <div class="product-card__image product-list__image">
-                    <picture>
-                      <source
-                        srcset="
-                          img/products/galaxy-earrings.webp,
-                          img/products/galaxy-earrings@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        src="img/products/galaxy-earrings.jpg"
-                        srcset="img/products/galaxy-earrings.jpg 2x"
-                        width="270"
-                        height="284"
-                        alt="purple pendant"
-                      />
-                    </picture>
-                  </div>
-                  <h3>Galaxy earrings</h3>
-                  <p>$ 95</p>
-                </a>
-              </article>
-            </li>
-
             <li class="product-list__item">
               <article
                 class="product-list__card product-card product-card--catalog"
@@ -594,6 +498,35 @@
                     <picture>
                       <source
                         srcset="
+                          img/products/gemstone-necklace.webp,
+                          img/products/gemstone-necklace@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/products/gemstone-necklace.jpg"
+                        srcset="img/products/gemstone-necklace.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="purple pendant"
+                      />
+                    </picture>
+                  </div>
+                  <h3>Necklace with amethyst</h3>
+                  <p>$ 145</p>
+                </a>
+              </article>
+            </li>
+
+            <li class="product-list__item">
+              <article
+                class="product-list__card product-card product-card--catalog"
+              >
+                <a class="product-card__wrapper" href="#">
+                  <div class="product-card__image product-list__image">
+                    <picture>
+                      <source
+                        srcset="
                           img/products/elephant-earrings.webp,
                           img/products/elephant-earrings@2x.webp 2x
                         "
@@ -604,11 +537,98 @@
                         srcset="img/products/elephant-earrings.jpg 2x"
                         width="270"
                         height="284"
-                        alt="purple pendant"
+                        alt="pair golden elephants"
                       />
                     </picture>
                   </div>
                   <h3>Elephant earrings</h3>
+                  <p>$ 95</p>
+                </a>
+              </article>
+            </li>
+
+            <li class="product-list__item">
+              <article
+                class="product-list__card product-card product-card--catalog"
+              >
+                <a class="product-card__wrapper" href="#">
+                  <div class="product-card__image product-list__image">
+                    <picture>
+                      <source
+                        srcset="
+                          img/products/threader-necklace-closeup.webp,
+                          img/products/threader-necklace-closeup@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/products/threader-necklace-closeup.jpg"
+                        srcset="img/products/threader-necklace-closeup.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="silver refined chain for true connoisseurs"
+                      />
+                    </picture>
+                  </div>
+                  <h3>Threader necklace</h3>
+                  <p>$ 115</p>
+                </a>
+              </article>
+            </li>
+
+            <li class="product-list__item">
+              <article
+                class="product-list__card product-card product-card--catalog"
+              >
+                <a class="product-card__wrapper" href="#">
+                  <div class="product-card__image product-list__image">
+                    <picture>
+                      <source
+                        srcset="
+                          img/products/origami-crane-necklace.webp,
+                          img/products/origami-crane-necklace@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/products/origami-crane-necklace.jpg"
+                        srcset="img/products/origami-crane-necklace.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="silver chain with origami bird pendant"
+                      />
+                    </picture>
+                  </div>
+                  <h3>Origami crane necklace</h3>
+                  <p>$ 105</p>
+                </a>
+              </article>
+            </li>
+
+            <li class="product-list__item">
+              <article
+                class="product-list__card product-card product-card--catalog"
+              >
+                <a class="product-card__wrapper" href="#">
+                  <div class="product-card__image product-list__image">
+                    <picture>
+                      <source
+                        srcset="
+                          img/products/marble-earrings.webp,
+                          img/products/marble-earrings@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/products/marble-earrings.jpg"
+                        srcset="img/products/marble-earrings.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="a pair of cute marble earrings"
+                      />
+                    </picture>
+                  </div>
+                  <h3>Marble earrings</h3>
                   <p>$ 95</p>
                 </a>
               </article>
@@ -641,9 +661,7 @@
               <button class="pagination__item-button" type="button">5</button>
             </li>
           </ul>
-          <div
-            class="pagination__button-wrapper pagination__button-wrapper--next"
-          >
+          <div class="pagination__button-wrapper--next">
             <button class="pagination__nav-button" type="button">Next</button>
           </div>
         </section>
@@ -657,7 +675,7 @@
           <h2>News and updates from CH. No&nbsp;spam, we promise.</h2>
           <form
             class="subscribe__form"
-            action="https://echo.htmlacademy.ru/"
+            action="echo.htmlacademy.ru"
             method="post"
           >
             <div class="subscribe__input-wrapper">
@@ -757,6 +775,90 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal" id="modal">
+      <div class="modal__overlay">
+        <div class="modal__window">
+          <div class="form modal__wrapper">
+            <form
+              class="form__wrapper modal__form"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+            >
+              <h2>Закажите звонок</h2>
+              <p>
+                Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в
+                удобное время
+              </p>
+              <label class="form__input-wrapper form__input-wrapper--modal">
+                <span class="visually-hidden">Имя</span>
+                <input
+                  type="text"
+                  name="name"
+                  id="modal-name"
+                  placeholder="Имя"
+                  required
+                />
+              </label>
+              <label class="form__input-wrapper form__input-wrapper--modal">
+                <span class="visually-hidden">Телефон</span>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="modal-phone"
+                  placeholder="Телефон"
+                  required
+                />
+              </label>
+              <label
+                class="
+                  form__input-wrapper
+                  form__input-wrapper--modal
+                  form__input-wrapper--textarea
+                "
+              >
+                <span class="visually-hidden">Ваш вопрос</span>
+                <textarea
+                  name="question"
+                  id="modal-question"
+                  placeholder="Ваш вопрос"
+                ></textarea>
+              </label>
+              <label
+                class="
+                  form__input-wrapper
+                  form__input-wrapper--modal
+                  form__input-wrapper--checkbox
+                "
+              >
+                <input
+                  class="visually-hidden"
+                  type="checkbox"
+                  name="personalData"
+                  id="modal-personalData"
+                  required
+                />
+                <span
+                  class="form__input-checkbox form__input-checkbox--modal"
+                ></span>
+                <span class="form__label"
+                  >Я согласен на обработку персональных данных</span
+                >
+              </label>
+              <button
+                class="button form__button form__button--modal"
+                type="submit"
+              >
+                Отправить
+              </button>
+            </form>
+            <button class="modal__close" type="button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/vendors.js"></script>
     <script src="js/main.js"></script>

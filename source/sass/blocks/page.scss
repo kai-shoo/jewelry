@@ -8,9 +8,10 @@
   font-size: 16px;
   color: $primary;
 
+  padding-left: calc(100vw - 100%);
   scroll-behavior: smooth;
 
-  &--block {
+  &.block {
     overflow: hidden;
   }
 }

@@ -1,5 +1,5 @@
 (function () {
-  const modalButtons = document.querySelectorAll(`.header__request`);
+  const modalButtons = document.querySelectorAll(`.nav__link--login`);
   const page = document.querySelector(`.page`);
   const modalClose = document.querySelector(`.modal__close`);
   const modal = document.querySelector(`#modal`);
@@ -8,7 +8,7 @@
   if (page && modalButtons && modalClose && modal && overlay) {
     const openModal = function () {
       modal.classList.add(`modal--active`);
-      page.classList.add(`page--block`);
+      page.classList.add(`block`);
 
       document.addEventListener(`keydown`, closeModal);
       modalClose.addEventListener(`click`, closeModal);
@@ -21,7 +21,7 @@
         return;
       }
 
-      page.classList.remove(`page--block`);
+      page.classList.remove(`block`);
       modal.classList.remove(`modal--active`);
       document.removeEventListener(`keydown`, closeModal);
       modalClose.removeEventListener(`click`, closeModal);

@@ -79,3 +79,14 @@
       width $speed ease-out $speed * 2, height $speed ease-out $speed * 3;
   }
 }
+
+@mixin hover-default {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -96,16 +96,32 @@ if (isExist) {
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 (function () {
-  const isForm = document.querySelector(`.accordion-container-form`);
-  const isAccordion = document.querySelector(`.accordion-container`);
+  const form = document.querySelector(`.filter__form`);
+  const clearButton = document.querySelector(`.filter__button--clear`);
 
-  if (isAccordion) {
+  if (form && clearButton) {
+    clearButton.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      form.reset();
+    });
+  }
+})();
+;
+/* eslint-disable new-cap */
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+(function () {
+  const hasForm = document.querySelector(`.accordion-container-form`);
+  const hasAccordion = document.querySelector(`.accordion-container`);
+
+  if (hasAccordion) {
     const contactsAccordion = new Accordion(`.accordion-container`, {
       openOnInit: [0],
     });
   }
 
-  if (isForm) {
+  if (hasForm) {
     const contactsAccordion = new Accordion(`.accordion-container-form`, {
       openOnInit: [0, 3],
       showMultiple: true,
@@ -114,60 +130,26 @@ if (isExist) {
 })();
 ;
 (function () {
-  window.addEventListener(`hashchange`, (e) => e.preventDefault());
+  const emailInput = document.querySelector(`[name='email']`);
 
-  document.querySelectorAll(`a[href^='#']`).forEach((link) => {
-    link.addEventListener(`click`, (e) => {
-      e.preventDefault();
-
-      const id = e.target.hash;
-      const target = document.querySelector(`${id}`);
-
-      if (target) {
-        target.scrollIntoView({behavior: `smooth`, inline: `end`});
+  if (emailInput) {
+    const initInput = () => {
+      if (!emailInput) {
+        return;
       }
+      emailInput.value = localStorage.getItem(`${emailInput.name}`);
+    };
+
+    window.addEventListener(`DOMContentLoaded`, initInput());
+
+    emailInput.addEventListener(`input`, () => {
+      localStorage.setItem(`${emailInput.name}`, emailInput.value);
     });
-  });
+  }
 })();
 ;
 (function () {
-  const MASK = `+7(___)___-__-__`;
-
-  const inputs = [`name`, `phone`, `question`]
-    .map((inputName) => [...document.querySelectorAll(`[name='${inputName}']`)])
-    .flat();
-
-  const getInputsValue = () => {
-    inputs.forEach((inputEl) => {
-      if (inputEl) {
-        inputEl.value = localStorage.getItem(`${inputEl.name}`);
-      }
-    });
-  };
-
-  window.addEventListener(`DOMContentLoaded`, getInputsValue);
-
-  inputs.forEach((input) => {
-    if (!input) {
-      return;
-    }
-
-    input.addEventListener(`input`, () => {
-      localStorage.setItem(`${input.name}`, input.value);
-    });
-  });
-
-  inputs.forEach((input) => {
-    if (!input) {
-      return;
-    }
-
-    input.addEventListener(`blur`, getInputsValue);
-  });
-})();
-;
-(function () {
-  const modalButtons = document.querySelectorAll(`.header__request`);
+  const modalButtons = document.querySelectorAll(`.nav__link--login`);
   const page = document.querySelector(`.page`);
   const modalClose = document.querySelector(`.modal__close`);
   const modal = document.querySelector(`#modal`);
@@ -176,7 +158,7 @@ if (isExist) {
   if (page && modalButtons && modalClose && modal && overlay) {
     const openModal = function () {
       modal.classList.add(`modal--active`);
-      page.classList.add(`page--block`);
+      page.classList.add(`block`);
 
       document.addEventListener(`keydown`, closeModal);
       modalClose.addEventListener(`click`, closeModal);
@@ -189,7 +171,7 @@ if (isExist) {
         return;
       }
 
-      page.classList.remove(`page--block`);
+      page.classList.remove(`block`);
       modal.classList.remove(`modal--active`);
       document.removeEventListener(`keydown`, closeModal);
       modalClose.removeEventListener(`click`, closeModal);

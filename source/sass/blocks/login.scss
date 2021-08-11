@@ -1,0 +1,117 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 586px;
+}
+.login__hero {
+  position: relative;
+  height: 138px;
+
+  margin-bottom: 22px;
+}
+
+.login_hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  object-fit: cover;
+  max-height: 100%;
+  width: 100%;
+}
+
+.login h2 {
+  font-family: $font-family-ui;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+  text-align: center;
+  color: inherit;
+}
+
+.login__submit {
+  width: 100%;
+
+  @include hover-default;
+}
+
+.login p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $grey;
+}
+
+.login__sign-up {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $primary;
+
+  cursor: pointer;
+
+  @include hover-default;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 340px;
+}
+
+.login__form input {
+  width: 100%;
+  padding: 5px 5px 8px 0;
+  margin-bottom: 30px;
+
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $primary;
+
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid $primary;
+  outline: none;
+
+  transition: border-color 0.2s ease-out;
+
+  &:placeholder {
+    color: $grey;
+  }
+
+  &:last-of-type {
+    margin-bottom: 5px;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $accent;
+  }
+
+  &:focus {
+    border-bottom: 1px solid $accent;
+
+    &::placeholder {
+      color: $black;
+    }
+  }
+}
+
+.login__restore-pw {
+  align-self: flex-end;
+  margin-bottom: 45px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: $grey;
+
+  @include hover-default;
+}

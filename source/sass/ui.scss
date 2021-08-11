@@ -46,4 +46,26 @@
   text-align: center;
 
   border-bottom: 1px solid $accent;
+
+  @include hover-default;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 68px;
+  padding: 16px;
+
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+
+  color: $white;
+
+  background: $accent;
+  border: 1px solid $accent;
+  cursor: pointer;
 }

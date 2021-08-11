@@ -1,9 +1,55 @@
 .catalog {
   display: grid;
-  gap: 50px;
+  column-gap: 50px;
+  row-gap: 43px;
   grid-template-columns: 250px 1fr;
+  margin-bottom: 59px;
+
+  @media (max-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 62px;
+  }
 }
 
 .catalog__pagination {
   grid-column-start: 2;
+}
+
+.catalog__filter {
+  @media (max-width: $tablet) {
+    display: none;
+
+    &.active {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+      display: block;
+      width: 100%;
+      height: 100vh;
+      background-color: white;
+
+      z-index: 100;
+    }
+  }
+}
+
+.catalog__filter-button {
+  display: none;
+  margin-bottom: 50px;
+
+  @media (max-width: $tablet) {
+    display: flex;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 40px;
+  }
 }

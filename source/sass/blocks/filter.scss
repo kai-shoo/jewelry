@@ -9,6 +9,25 @@
 
 .filter__container {
   border: 1px solid $accent;
+
+  margin-bottom: 35px;
+
+  @media (max-width: $tablet) {
+    .active & {
+      border: 0;
+    }
+  }
+}
+
+.filter__wrapper {
+  @media (max-width: $tablet) {
+    .active & {
+      margin-top: 24px;
+
+      position: relative;
+      max-width: 458px;
+    }
+  }
 }
 
 .filter__item {
@@ -29,6 +48,15 @@
   .is-active &::after,
   .is-active &::before {
     content: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -65,6 +93,15 @@
   &:last-child {
     margin-bottom: 29px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .filter__buttons {
@@ -73,7 +110,7 @@
 }
 
 .filter__button {
-  padding: 28px 16px;
+  padding: 24px 18px 22px;
   margin-bottom: 25px;
 
   font-family: $font-family;
@@ -93,6 +130,15 @@
     background: $accent;
     color: $white;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .filter__panel {
@@ -100,5 +146,58 @@
 }
 
 .filter__slider {
-  margin-top: -3px;
+  margin-bottom: 39px;
+  height: 15px;
+}
+
+.filter__button-close-container {
+  display: none;
+
+  @media (max-width: $tablet) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transform: translate(50%, -50%);
+  }
+}
+
+.filter__button-close {
+  @media (max-width: $tablet) {
+    display: block;
+    position: relative;
+    width: 32px;
+    height: 32px;
+
+    color: transparent;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: black;
+    appearance: none;
+    cursor: pointer;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 50%;
+
+      width: 18px;
+      height: 2px;
+
+      background: $white;
+    }
+
+    &::after {
+      transform: translate(50%, -50%) rotate(45deg);
+    }
+
+    &::before {
+      transform: translate(50%, -50%) rotate(-45deg);
+    }
+  }
 }

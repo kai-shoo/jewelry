@@ -1,35 +1,18 @@
 (function () {
-  const MASK = `+7(___)___-__-__`;
+  const emailInput = document.querySelector(`[name='email']`);
 
-  const inputs = [`name`, `phone`, `question`]
-    .map((inputName) => [...document.querySelectorAll(`[name='${inputName}']`)])
-    .flat();
-
-  const getInputsValue = () => {
-    inputs.forEach((inputEl) => {
-      if (inputEl) {
-        inputEl.value = localStorage.getItem(`${inputEl.name}`);
+  if (emailInput) {
+    const initInput = () => {
+      if (!emailInput) {
+        return;
       }
+      emailInput.value = localStorage.getItem(`${emailInput.name}`);
+    };
+
+    window.addEventListener(`DOMContentLoaded`, initInput());
+
+    emailInput.addEventListener(`input`, () => {
+      localStorage.setItem(`${emailInput.name}`, emailInput.value);
     });
-  };
-
-  window.addEventListener(`DOMContentLoaded`, getInputsValue);
-
-  inputs.forEach((input) => {
-    if (!input) {
-      return;
-    }
-
-    input.addEventListener(`input`, () => {
-      localStorage.setItem(`${input.name}`, input.value);
-    });
-  });
-
-  inputs.forEach((input) => {
-    if (!input) {
-      return;
-    }
-
-    input.addEventListener(`blur`, getInputsValue);
-  });
+  }
 })();
