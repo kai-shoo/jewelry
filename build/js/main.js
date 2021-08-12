@@ -1,5 +1,79 @@
 "use strict";
 (function () {
+  const modalButton = document.querySelector(`.nav__link--login`);
+  const page = document.querySelector(`.page`);
+  const modalClose = document.querySelector(`#modal .modal__close`);
+  const modal = document.querySelector(`#modal`);
+  const overlay = document.querySelector(`#modal .modal__overlay`);
+
+  console.log(page, modalButton, modalClose, modal, overlay);
+
+  if (page && modalButton && modalClose && modal && overlay) {
+    const openModal = function () {
+      modal.classList.add(`modal--active`);
+      page.classList.add(`block`);
+
+      document.addEventListener(`keydown`, closeModal);
+      modalClose.addEventListener(`click`, closeModal);
+
+      trapFocus(modal);
+    };
+
+    const closeModal = function (e) {
+      if (e.key && e.key !== `Escape`) {
+        return;
+      }
+
+      page.classList.remove(`block`);
+      modal.classList.remove(`modal--active`);
+      document.removeEventListener(`keydown`, closeModal);
+      modalClose.removeEventListener(`click`, closeModal);
+    };
+
+    overlay.addEventListener(`click`, (e) => {
+      if (e.target.classList.contains(`modal__overlay`)) {
+        closeModal(e);
+      }
+    });
+    console.log(modalButton);
+    modalButton.addEventListener(`click`, (e) => {
+      e.preventDefault();
+
+      openModal();
+    });
+  }
+
+  function trapFocus(element) {
+    const focusableEls = element.querySelectorAll(`input, textarea, button`);
+    const firstFocusableEl = focusableEls[0];
+    const lastFocusableEl = focusableEls[focusableEls.length - 1];
+    const KEYCODE_TAB = 9;
+
+    firstFocusableEl.focus();
+
+    document.addEventListener(`keydown`, function (e) {
+      const isTabPressed = e.key === `Tab` || e.keyCode === KEYCODE_TAB;
+
+      if (!isTabPressed) {
+        return;
+      }
+
+      if (e.shiftKey) {
+        if (document.activeElement === firstFocusableEl) {
+          lastFocusableEl.focus();
+          e.preventDefault();
+        }
+      } else {
+        if (document.activeElement === lastFocusableEl) {
+          firstFocusableEl.focus();
+          e.preventDefault();
+        }
+      }
+    });
+  }
+})();
+;
+(function () {
   const header = document.querySelector(`.header`);
   const buttonToggle = document.querySelector(`.toggle`);
   const page = document.querySelector(`.page`);
@@ -94,42 +168,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 (function () {
-  const phoneInputs = document.querySelectorAll(`input[type="tel"]`);
-  const form = document.querySelector(`.form__wrapper`);
-
-  if (phoneInputs && form) {
-    form.addEventListener(`submit`, (e) => {
-      const formData = new FormData(form);
-
-      fetch(`https://echo.htmlacademy.ru/`, {
-        method: `post`,
-        body: formData,
-      });
-    });
-
-    phoneInputs.forEach((phoneInput) => {
-      const phoneMask = IMask(phoneInput, {
-        mask: `+{7}(000)000-00-00`,
-        lazy: true,
-      });
-
-      phoneInput.addEventListener(
-          `blur`,
-          () => {
-            phoneMask.updateOptions({
-              lazy: true,
-            });
-          },
-          true
-      );
-    });
-  }
-})();
-;
-/* eslint-disable new-cap */
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
-(function () {
   const hasForm = document.querySelector(`.accordion-container-form`);
   const hasAccordion = document.querySelector(`.accordion-container`);
 
@@ -162,80 +200,6 @@
 
     emailInput.addEventListener(`input`, () => {
       localStorage.setItem(`${emailInput.name}`, emailInput.value);
-    });
-  }
-})();
-;
-(function () {
-  const modalButtons = document.querySelectorAll(`.nav__link--login`);
-  const page = document.querySelector(`.page`);
-  const modalClose = document.querySelector(`.modal__close`);
-  const modal = document.querySelector(`#modal`);
-  const overlay = document.querySelector(`#modal .modal__overlay`);
-
-  if (page && modalButtons && modalClose && modal && overlay) {
-    const openModal = function () {
-      modal.classList.add(`modal--active`);
-      page.classList.add(`block`);
-
-      document.addEventListener(`keydown`, closeModal);
-      modalClose.addEventListener(`click`, closeModal);
-
-      trapFocus(modal);
-    };
-
-    const closeModal = function (e) {
-      if (e.key && e.key !== `Escape`) {
-        return;
-      }
-
-      page.classList.remove(`block`);
-      modal.classList.remove(`modal--active`);
-      document.removeEventListener(`keydown`, closeModal);
-      modalClose.removeEventListener(`click`, closeModal);
-    };
-
-    overlay.addEventListener(`click`, (e) => {
-      if (e.target.classList.contains(`modal__overlay`)) {
-        closeModal(e);
-      }
-    });
-
-    modalButtons.forEach((button) =>
-      button.addEventListener(`click`, (e) => {
-        e.preventDefault();
-
-        openModal();
-      })
-    );
-  }
-
-  function trapFocus(element) {
-    const focusableEls = element.querySelectorAll(`input, textarea, button`);
-    const firstFocusableEl = focusableEls[0];
-    const lastFocusableEl = focusableEls[focusableEls.length - 1];
-    const KEYCODE_TAB = 9;
-
-    firstFocusableEl.focus();
-
-    document.addEventListener(`keydown`, function (e) {
-      const isTabPressed = e.key === `Tab` || e.keyCode === KEYCODE_TAB;
-
-      if (!isTabPressed) {
-        return;
-      }
-
-      if (e.shiftKey) {
-        if (document.activeElement === firstFocusableEl) {
-          lastFocusableEl.focus();
-          e.preventDefault();
-        }
-      } else {
-        if (document.activeElement === lastFocusableEl) {
-          firstFocusableEl.focus();
-          e.preventDefault();
-        }
-      }
     });
   }
 })();

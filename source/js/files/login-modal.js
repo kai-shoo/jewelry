@@ -1,11 +1,11 @@
 (function () {
-  const modalButtons = document.querySelectorAll(`.nav__link--login`);
+  const modalButton = document.querySelector(`.nav__link--login`);
   const page = document.querySelector(`.page`);
-  const modalClose = document.querySelector(`.modal__close`);
+  const modalClose = document.querySelector(`#modal .modal__close`);
   const modal = document.querySelector(`#modal`);
   const overlay = document.querySelector(`#modal .modal__overlay`);
 
-  if (page && modalButtons && modalClose && modal && overlay) {
+  if (page && modalButton && modalClose && modal && overlay) {
     const openModal = function () {
       modal.classList.add(`modal--active`);
       page.classList.add(`block`);
@@ -32,14 +32,12 @@
         closeModal(e);
       }
     });
+    console.log(modalButton);
+    modalButton.addEventListener(`click`, (e) => {
+      e.preventDefault();
 
-    modalButtons.forEach((button) =>
-      button.addEventListener(`click`, (e) => {
-        e.preventDefault();
-
-        openModal();
-      })
-    );
+      openModal();
+    });
   }
 
   function trapFocus(element) {

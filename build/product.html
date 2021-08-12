@@ -496,45 +496,30 @@
     <div class="modal" id="modal">
       <div class="modal__overlay">
         <div class="modal__window">
-          <div class="form modal__wrapper">
-            <form class="form__wrapper modal__form" action="https://echo.htmlacademy.ru/" method="post">
-              <h2>Закажите звонок</h2>
-              <p>
-                Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в
-                удобное время
-              </p>
-              <label class="form__input-wrapper form__input-wrapper--modal">
-                <span class="visually-hidden">Имя</span>
-                <input type="text" name="name" id="modal-name" placeholder="Имя" required="">
-              </label>
-              <label class="form__input-wrapper form__input-wrapper--modal">
-                <span class="visually-hidden">Телефон</span>
-                <input type="tel" name="phone" id="modal-phone" placeholder="Телефон" required="">
-              </label>
-              <label class="
-                  form__input-wrapper
-                  form__input-wrapper--modal
-                  form__input-wrapper--textarea
-                ">
-                <span class="visually-hidden">Ваш вопрос</span>
-                <textarea name="question" id="modal-question" placeholder="Ваш вопрос"></textarea>
-              </label>
-              <label class="
-                  form__input-wrapper
-                  form__input-wrapper--modal
-                  form__input-wrapper--checkbox
-                ">
-                <input class="visually-hidden" type="checkbox" name="personalData" id="modal-personalData" required="">
-                <span class="form__input-checkbox form__input-checkbox--modal"></span>
-                <span class="form__label">Я согласен на обработку персональных данных</span>
-              </label>
-              <button class="button form__button form__button--modal" type="submit">
-                Отправить
-              </button>
+          <div class="modal__wrapper login">
+            <div class="login__hero">
+              <picture>
+                <source srcset="img/modal-bg.webp, img/modal-bg@2x.webp 2x" type="image/webp">
+                <img src="img/modal-bg.jpg" srcset="img/modal-bg.jpg 2x" width="442" height="138">
+              </picture>
+            </div>
+
+            <h2>Log in</h2>
+
+            <form class="login__form" action="echo.htmlacademy.ru" method="post">
+              <input type="email" name="email">
+              <input type="password" name="password">
+              <p class="login__restore-pw">Forgot your password?</p>
+
+              <button class="login__submit button" type="submit"></button>
             </form>
             <button class="modal__close" type="button">
               <span class="visually-hidden">Закрыть</span>
             </button>
+            <p>
+              Don’t have an account?
+              <span class="login__sign-up"> Sign up </span>
+            </p>
           </div>
         </div>
       </div>
