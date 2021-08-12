@@ -23,23 +23,23 @@
 }
 
 .modal__wrapper {
-  padding: 0;
-}
-
-.modal__window {
-  position: absolute;
+  position: fixed;
   top: 44%;
   left: 50%;
 
-  display: flex;
-  width: 100%;
-  margin-left: 16px;
-  margin-right: 16px;
-  max-width: 430px;
-  justify-content: flex-end;
+  padding-left: 16px;
+  padding-right: 16px;
   max-height: 100vh;
-
+  max-width: 462px;
   transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.modal__window {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+
   background-color: $neutral;
 
   overflow: auto;
@@ -49,7 +49,7 @@
 .modal__close {
   position: absolute;
   top: 8px;
-  right: 8px;
+  right: 24px;
 
   appearance: none;
   background-color: transparent;

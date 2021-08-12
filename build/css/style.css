@@ -2797,23 +2797,17 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 586px; }
+  min-height: 586px;
+  max-height: 100vh; }
 
 .login__hero {
   position: relative;
   height: 138px;
   margin-bottom: 22px; }
 
-.login_hero img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+.login__hero img {
   -o-object-fit: cover;
-     object-fit: cover;
-  max-height: 100%;
-  width: 100%; }
+     object-fit: cover; }
 
 .login h2 {
   font-family: "Cormorant Garamond", "Georgia", serif;
@@ -2860,7 +2854,9 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 340px; }
+  max-width: 370px;
+  padding-left: 15px;
+  padding-right: 15px; }
 
 .login__form input {
   width: 100%;
@@ -2929,25 +2925,25 @@ a {
   z-index: 1010; }
 
 .modal__wrapper {
-  padding: 0; }
-
-.modal__window {
-  position: absolute;
+  position: fixed;
   top: 44%;
   left: 50%;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-height: 100vh;
+  max-width: 462px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%; }
+
+.modal__window {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  margin-left: 16px;
-  margin-right: 16px;
-  max-width: 430px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  max-height: 100vh;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-color: #f0eae4;
   overflow: auto;
   z-index: 1020; }
@@ -2955,7 +2951,7 @@ a {
 .modal__close {
   position: absolute;
   top: 8px;
-  right: 8px;
+  right: 24px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;

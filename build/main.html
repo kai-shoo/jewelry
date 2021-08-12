@@ -635,31 +635,35 @@
 
     <div class="modal" id="modal">
       <div class="modal__overlay">
-        <div class="modal__window">
-          <div class="modal__wrapper login">
-            <div class="login__hero">
-              <picture>
-                <source srcset="img/modal-bg.webp, img/modal-bg@2x.webp 2x" type="image/webp">
-                <img src="img/modal-bg.jpg" srcset="img/modal-bg.jpg 2x" width="442" height="138">
-              </picture>
+        <div class="modal__wrapper">
+          <div class="modal__window">
+            <div class="login">
+              <div class="login__hero">
+                <picture>
+                  <source srcset="img/modal-bg.webp, img/modal-bg@2x.webp 2x" type="image/webp">
+                  <img src="img/modal-bg.jpg" srcset="img/modal-bg.jpg 2x" width="442" height="138">
+                </picture>
+              </div>
+
+              <h2>Log in</h2>
+
+              <form class="login__form" action="echo.htmlacademy.ru" method="post">
+                <input type="email" name="email">
+                <input type="password" name="password">
+                <p class="login__restore-pw">Forgot your password?</p>
+
+                <button class="login__submit button" type="submit">
+                  Log in
+                </button>
+              </form>
+              <button class="modal__close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+              <p>
+                Don’t have an account?
+                <span class="login__sign-up"> Sign up </span>
+              </p>
             </div>
-
-            <h2>Log in</h2>
-
-            <form class="login__form" action="echo.htmlacademy.ru" method="post">
-              <input type="email" name="email">
-              <input type="password" name="password">
-              <p class="login__restore-pw">Forgot your password?</p>
-
-              <button class="login__submit button" type="submit"></button>
-            </form>
-            <button class="modal__close" type="button">
-              <span class="visually-hidden">Закрыть</span>
-            </button>
-            <p>
-              Don’t have an account?
-              <span class="login__sign-up"> Sign up </span>
-            </p>
           </div>
         </div>
       </div>
