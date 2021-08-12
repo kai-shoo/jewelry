@@ -38,23 +38,57 @@
 /* eslint-disable new-cap */
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-const isExist = document.querySelector(`.splide`);
-if (isExist) {
-  new Splide(`.splide`, {
-    type: `loop`,
-    perPage: 4,
-    perMove: 4,
-    arrowPath: `M5 19.5H34M34 19.5L28.5135 15M34 19.5L28.5135 24`,
-    gap: `30px`,
-    trimSpace: true,
-    breakpoints: {
-      1024: {
-        perPage: 2,
-        perMove: 2,
+(function () {
+  const hasSplide = document.querySelector(`.splide`);
+  if (hasSplide) {
+    new Splide(`.splide`, {
+      type: `loop`,
+      perPage: 4,
+      perMove: 4,
+      arrowPath: `M5 19.5H34M34 19.5L28.5135 15M34 19.5L28.5135 24`,
+      gap: `30px`,
+      trimSpace: true,
+      breakpoints: {
+        1023: {
+          perPage: 2,
+          perMove: 2,
+        },
       },
-    },
-  }).mount();
-}
+    }).mount();
+  }
+})();
+;
+/* eslint-disable new-cap */
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+(function () {
+  const gallerySlider = document.querySelector(`.gallery`);
+  const mediaQueryMobile = window.matchMedia(`(max-width: 767px)`);
+  let slider = null;
+
+  const handleMobileWidth = (mql) => {
+    if (mql.matches && !slider && gallerySlider) {
+      slider = new Splide(`.gallery`, {
+        type: `loop`,
+        perPage: 1,
+        perMove: 1,
+        arrows: false,
+        classes: {
+          pagination: `splide__pagination gallery__pagination`,
+          page: `splide__pagination__page gallery__pagination-page`,
+        },
+      }).mount();
+    }
+
+    if (!mql.matches && slider) {
+      slider.destroy();
+      slider = null;
+    }
+  };
+
+  window.addEventListener(`DOMContentLoaded `, handleMobileWidth(mediaQueryMobile));
+  mediaQueryMobile.addEventListener(`change`, handleMobileWidth);
+})();
 ;
 /* eslint-disable new-cap */
 /* eslint-disable no-undef */
@@ -88,22 +122,6 @@ if (isExist) {
           },
           true
       );
-    });
-  }
-})();
-;
-/* eslint-disable new-cap */
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
-(function () {
-  const form = document.querySelector(`.filter__form`);
-  const clearButton = document.querySelector(`.filter__button--clear`);
-
-  if (form && clearButton) {
-    clearButton.addEventListener("click", (e) => {
-      e.preventDefault();
-
-      form.reset();
     });
   }
 })();
