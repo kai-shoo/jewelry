@@ -1,0 +1,11 @@
+.page-product__showcase {
+  margin-bottom: 116px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 63px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 52px;
+  }
+}

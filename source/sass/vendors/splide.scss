@@ -11,8 +11,8 @@
   box-sizing: border-box;
 }
 .splide__list {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
   width: -webkit-max-content;
   width: max-content;
   will-change: transform;
@@ -232,7 +232,7 @@
 
     li:last-child &::after {
       white-space: pre;
-      content: counter(pageCounter) "   of   6";
+      content: counter(pageCounter) "   of   " counter(pageCounter);
     }
   }
 }

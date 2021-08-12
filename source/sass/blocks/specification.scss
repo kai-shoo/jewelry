@@ -1,0 +1,139 @@
+.specification {
+  display: flex;
+  flex-direction: column;
+}
+
+.specification__header h2 {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-family: $font-family-ui;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+  color: $primary;
+}
+
+.specification__header p {
+  margin: 0;
+
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 130%;
+}
+
+.specification__header {
+  margin-bottom: 39px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 30px;
+  }
+}
+
+.specification__info {
+  @media (max-width: $mobile) {
+    margin-bottom: 40px;
+  }
+}
+.specification__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 21px;
+}
+.specification__tab {
+  padding: 0;
+  margin-right: 36px;
+
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: $grey;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--active {
+    color: $primary;
+  }
+
+  @include hover-animation;
+}
+
+.specification__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+  color: $primary;
+}
+
+.specification__item {
+  display: flex;
+  padding: 10px 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  border-bottom: 1px solid $neutral;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.specification__term {
+  font-weight: 500;
+}
+
+.specification__value {
+  margin: 0;
+
+  text-align: end;
+}
+.specification__add {
+  margin-top: auto;
+  margin-bottom: 15px;
+
+  @include hover-default;
+}
+
+.specification__conditions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 130%;
+  color: $grey;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 0px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0 10px;
+
+    font-size: 12px;
+  }
+}
+
+.specification__conditions p {
+  margin: 0;
+  text-align: center;
+
+  @media (max-width: $mobile) {
+    width: min-content;
+  }
+}

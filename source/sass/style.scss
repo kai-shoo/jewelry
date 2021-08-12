@@ -37,8 +37,13 @@
 @import "blocks/slider.scss";
 @import "blocks/product-list.scss";
 @import "blocks/pagination.scss";
-
 @import "blocks/page-catalog.scss";
+
+// Product Page
+@import "blocks/product.scss";
+@import "blocks/specification.scss";
+@import "blocks/gallery.scss";
+@import "blocks/page-product.scss";
 
 @import "blocks/login.scss";
 @import "blocks/modal.scss";
