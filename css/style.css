@@ -2897,6 +2897,7 @@ a {
       color: #000000; }
 
 .login__restore-pw {
+  margin: 0;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-bottom: 45px;
