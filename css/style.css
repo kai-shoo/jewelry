@@ -2136,6 +2136,10 @@ a {
   @media (max-width: 767px) {
     .catalog__filter-button {
       margin-bottom: 40px; } }
+  .catalog__filter-button:hover, .catalog__filter-button:focus {
+    opacity: 0.7; }
+  .catalog__filter-button:active {
+    opacity: 0.3; }
 
 .filter {
   width: 100%; }
@@ -2266,6 +2270,15 @@ a {
       right: 0;
       -webkit-transform: translate(50%, -50%);
               transform: translate(50%, -50%); } }
+  @media (max-width: 767px) {
+    .filter__button-close-container {
+      z-index: 10;
+      top: 0;
+      right: 20px; } }
+  .filter__button-close-container:hover, .filter__button-close-container:focus {
+    opacity: 0.7; }
+  .filter__button-close-container:active {
+    opacity: 0.3; }
 
 @media (max-width: 1023px) {
   .filter__button-close {
