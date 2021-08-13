@@ -1,6 +1,6 @@
 .product {
   display: grid;
-  grid-template-columns: min(51%, 600px) 370px;
+  grid-template-columns: Min(51%, 600px) 370px;
   gap: 100px;
   column-gap: clamp(30px, calc(100% - 970px), 103px);
   margin-top: 70px;

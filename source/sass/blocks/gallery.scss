@@ -9,7 +9,7 @@
 .gallery__list {
   display: grid;
   gap: 30px;
-  grid-template-columns: min(17%, 100px) min(79%, 470px);
+  grid-template-columns: Min(17%, 100px) Min(79%, 470px);
   grid-auto-rows: auto;
 
   width: auto;

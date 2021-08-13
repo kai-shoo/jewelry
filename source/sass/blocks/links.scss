@@ -3,12 +3,12 @@
   padding: 0;
 
   columns: 2;
-  column-gap: min(43%, 140px);
+  column-gap: Min(43%, 140px);
 
   list-style: none;
 
   @media (max-width: $tablet) {
-    column-gap: min(50%, 169px);
+    column-gap: Min(50%, 169px);
   }
 
   @media (max-width: $mobile) {
