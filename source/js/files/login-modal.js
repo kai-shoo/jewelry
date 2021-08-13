@@ -32,7 +32,6 @@
         closeModal(e);
       }
     });
-    console.log(modalButton);
     modalButton.addEventListener(`click`, (e) => {
       e.preventDefault();
 

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="html academy grading" />
+    <title>Jewellery</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="page page--nojs">
+    <header class="page__header header container">
+      <div class="header__toggle toggle">
+        <button class="toggle__button" aria-label="toggle menu" type="button">
+          <span class="toggle__icon"></span>
+        </button>
+      </div>
+
+      <div class="header__search search">
+        <label class="search__container">
+          <span class="search__icon">
+            <svg width="14" height="14">
+              <use xlink:href="img/sprite_auto.svg#icon-search" />
+            </svg>
+          </span>
+          <input type="search" placeholder="Type here to search" />
+        </label>
+      </div>
+
+      <a class="header__logo logo" href="#">
+        <img src="img/logo.svg" alt="Jewellery" width="66" height="66" />
+      </a>
+      <div class="header__nav header__nav--secondary nav nav--secondary">
+        <div class="nav__container">
+          <a class="nav__link nav__link--login" href="#">Login</a>
+          <a class="nav__link nav__link--cart" href="#">
+            <span class="nav__cart-icon">
+              <svg width="20" height="18">
+                <use xlink:href="img/sprite_auto.svg#icon-cart" />
+              </svg>
+            </span>
+            <span class="nav__cart-text">Cart&nbsp;<span>0</span></span>
+          </a>
+        </div>
+      </div>
+      <div class="header__nav header__nav--navigation nav nav--navigation">
+        <ul class="nav__container">
+          <li class="nav__item">
+            <a class="nav__link" href="#">What’s new</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Chokers</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Necklaces</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Rings</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Earrings</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__nav header__nav--alternate nav nav--alternate">
+        <div class="nav__container">
+          <a class="nav__link" href="#">About CH</a>
+          <a class="nav__link" href="#">Stores & Hours</a>
+          <a class="nav__link" href="#">Contact Us</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="modal modal--active modal--cart" id="modal-login">
+        <div class="modal__overlay">
+          <div class="modal__wrapper">
+            <div class="modal__window">
+              <div class="cart">
+                <h2>The item was added to your cart</h2>
+
+                <div class="cart__info">
+                  <div class="cart__product">
+                    <div class="cart__image">
+                      <picture>
+                        <source
+                          srcset="
+                            img/hero/hero-catalog.webp,
+                            img/hero/hero-catalog@2x.webp 2x
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          src="img/hero/hero-catalog.jpg"
+                          srcset="img/hero/hero-catalog.jpg 2x"
+                          width="1366"
+                          height="453"
+                          alt="several beautiful necklaces on the neckline of a girl in a white blouse"
+                        />
+                      </picture>
+                    </div>
+                    <div class="card__product-info">
+                      <h3>Gold Necklace</h3>
+                      <p>$ 115</p>
+                    </div>
+                  </div>
+                  <div class="cart__quantity">
+                    <button
+                      class="cart__quantity-button cart__quantity-button--plus"
+                      type="button"
+                      aria-label="more"
+                    ></button>
+                    <p>1</p>
+                    <button
+                      class="cart__quantity-button cart__quantity-button--minus"
+                      type="button"
+                      aria-label="less"
+                    ></button>
+                  </div>
+                </div>
+
+                <div class="cart__footer">
+                  <div class="cart__output">
+                    <p>You have 1 item in the cart</p>
+                    <div class="cart__price">
+                      <p>Cart subtotal: $ 115</p>
+                    </div>
+                  </div>
+                  <div class="cart__buttons">
+                    <a
+                      href="catalog.html"
+                      class="cart__button button button--empty"
+                      ><span class="button__inner">Continue shopping</span></a
+                    >
+                    <a href="checkout.html" class="cart__button button"
+                      >Checkout</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="modal__close" type="button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page__footer footer">
+      <div class="footer__container container">
+        <div class="footer__subscribe subscribe">
+          <p>The good stuff in&nbsp;your inbox</p>
+          <h2>News and updates from CH. No&nbsp;spam, we promise.</h2>
+          <form
+            class="subscribe__form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <div class="subscribe__input-wrapper">
+              <label class="subscribe__label">
+                <input
+                  class="subscribe__input"
+                  placeholder="Your E-mail"
+                  type="email"
+                />
+              </label>
+              <div class="subscribe__submit-wrapper">
+                <button class="subscribe__submit" type="submit">
+                  Sign Up
+                  <span class="subscribe__submit-icon">
+                    <svg width="29" height="9">
+                      <use xlink:href="img/sprite_auto.svg#icon-arrow" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="footer__links links">
+          <h2 class="visually-hidden">Links</h2>
+          <ul class="links__container">
+            <li class="links__item">
+              <a href="#" class="links__link">Ordering & Payment</a>
+            </li>
+            <li class="links__item">
+              <a href="#" class="links__link">Terms & Conditions</a>
+            </li>
+            <li class="links__item">
+              <a href="#" class="links__link">Returns & Exchanges</a>
+            </li>
+            <li class="links__item">
+              <a href="#" class="links__link">Delivery</a>
+            </li>
+            <li class="links__item">
+              <a href="#" class="links__link">About CH</a>
+            </li>
+            <li class="links__item">
+              <a href="#" class="links__link">Stores & Hours</a>
+            </li>
+            <li class="links__item">
+              <a href="#" class="links__link">Jobs</a>
+            </li>
+            <li class="links__item">
+              <a href="#" class="links__link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__social social">
+          <h2 class="visually-hidden">Social links</h2>
+          <ul class="social__container">
+            <li class="social__item">
+              <a href="" class="social__link">
+                <span class="social__icon social__icon--fb">
+                  <svg width="8" height="15">
+                    <use xlink:href="img/sprite_auto.svg#icon-fb" />
+                  </svg>
+                </span>
+                <span class="social__name">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <span class="social__icon social__icon--insta">
+                  <svg width="15" height="15">
+                    <use xlink:href="img/sprite_auto.svg#icon-insta" />
+                  </svg>
+                </span>
+                <span class="social__name">Instagram</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <span class="social__icon social__icon--pin">
+                  <svg width="15" height="15">
+                    <use xlink:href="img/sprite_auto.svg#icon-pin" />
+                  </svg>
+                </span>
+                <span class="social__name">Pinterest</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <span class="social__icon social__icon--twi">
+                  <svg width="15" height="13">
+                    <use xlink:href="img/sprite_auto.svg#icon-twi" />
+                  </svg>
+                </span>
+                <span class="social__name">Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -33,6 +33,10 @@
   max-width: 462px;
   transform: translate(-50%, -50%);
   width: 100%;
+
+  .modal--cart & {
+    max-width: 534px;
+  }
 }
 
 .modal__window {
@@ -40,10 +44,14 @@
   display: flex;
   justify-content: flex-start;
 
-  background-color: $neutral;
+  background: $neutral;
 
   overflow: auto;
   z-index: 1020;
+
+  .modal--cart & {
+    background: $white;
+  }
 }
 
 .modal__close {
