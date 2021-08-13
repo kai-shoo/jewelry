@@ -9,6 +9,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="html academy grading" />
     <title>Jewellery</title>
+    <link
+      rel="preload"
+      href="fonts/poppins-v15-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/cormorant-garamond-v10-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="page page--nojs page-product">
@@ -30,7 +44,7 @@
         </label>
       </div>
 
-      <a class="header__logo logo" href="#">
+      <a class="header__logo logo" href="main.html">
         <img src="img/logo.svg" alt="Jewellery" width="66" height="66" />
       </a>
       <div class="header__nav header__nav--secondary nav nav--secondary">
@@ -232,6 +246,7 @@
                         type="image/webp"
                       />
                       <img
+                        loading="lazy"
                         src="img/products/gemstone-necklace.jpg"
                         srcset="img/products/gemstone-necklace.jpg 2x"
                         width="270"
@@ -259,6 +274,7 @@
                         type="image/webp"
                       />
                       <img
+                        loading="lazy"
                         src="img/products/layered-choker-necklace.jpg"
                         srcset="img/products/layered-choker-necklace.jpg 2x"
                         width="270"
@@ -286,6 +302,7 @@
                         type="image/webp"
                       />
                       <img
+                        loading="lazy"
                         src="img/products/dainty-gold-necklace.jpg"
                         srcset="img/products/dainty-gold-necklace.jpg 2x"
                         width="270"
@@ -313,6 +330,7 @@
                         type="image/webp"
                       />
                       <img
+                        loading="lazy"
                         src="img/products/galaxy-earrings.jpg"
                         srcset="img/products/galaxy-earrings.jpg 2x"
                         width="270"
@@ -340,6 +358,7 @@
                         type="image/webp"
                       />
                       <img
+                        loading="lazy"
                         src="img/products/double-pearl-earrings.jpg"
                         srcset="img/products/double-pearl-earrings.jpg 2x"
                         width="270"
@@ -367,6 +386,7 @@
                         type="image/webp"
                       />
                       <img
+                        loading="lazy"
                         src="img/products/black-choker-gold-bead.jpg"
                         srcset="img/products/black-choker-gold-bead.jpg 2x"
                         width="270"
@@ -394,6 +414,7 @@
                         type="image/webp"
                       />
                       <img
+                        loading="lazy"
                         src="img/products/gold-layered-necklace.jpg"
                         srcset="img/products/gold-layered-necklace.jpg 2x"
                         width="270"
@@ -421,6 +442,7 @@
                         type="image/webp"
                       />
                       <img
+                        loading="lazy"
                         src="img/products/blue-gemstone-pendant.jpg"
                         srcset="img/products/blue-gemstone-pendant.jpg 2x"
                         width="270"
@@ -448,6 +470,7 @@
                         type="image/webp"
                       />
                       <img
+                        loading="lazy"
                         src="img/products/boho-earrings.jpg"
                         srcset="img/products/boho-earrings.jpg 2x"
                         width="270"
@@ -475,6 +498,7 @@
                         type="image/webp"
                       />
                       <img
+                        loading="lazy"
                         src="img/products/bird-necklace.jpg"
                         srcset="img/products/bird-necklace.jpg 2x"
                         width="270"
@@ -502,6 +526,7 @@
                         type="image/webp"
                       />
                       <img
+                        loading="lazy"
                         src="img/products/black-leather-choker-necklace.jpg"
                         srcset="
                           img/products/black-leather-choker-necklace.jpg 2x
@@ -531,6 +556,7 @@
                         type="image/webp"
                       />
                       <img
+                        loading="lazy"
                         src="img/products/elephant-earrings.jpg"
                         srcset="img/products/elephant-earrings.jpg 2x"
                         width="270"
@@ -613,7 +639,7 @@
           <h2 class="visually-hidden">Social links</h2>
           <ul class="social__container">
             <li class="social__item">
-              <a href="" class="social__link">
+              <a href="#" class="social__link">
                 <span class="social__icon social__icon--fb">
                   <svg width="8" height="15">
                     <use xlink:href="img/sprite_auto.svg#icon-fb" />
@@ -623,7 +649,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link">
+              <a href="#" class="social__link">
                 <span class="social__icon social__icon--insta">
                   <svg width="15" height="15">
                     <use xlink:href="img/sprite_auto.svg#icon-insta" />
@@ -633,7 +659,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link">
+              <a href="#" class="social__link">
                 <span class="social__icon social__icon--pin">
                   <svg width="15" height="15">
                     <use xlink:href="img/sprite_auto.svg#icon-pin" />
@@ -643,7 +669,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link">
+              <a href="#" class="social__link">
                 <span class="social__icon social__icon--twi">
                   <svg width="15" height="13">
                     <use xlink:href="img/sprite_auto.svg#icon-twi" />
@@ -673,6 +699,7 @@
                     srcset="img/modal-bg.jpg 2x"
                     width="442"
                     height="138"
+                    alt="pretty earrings on a blouse"
                   />
                 </picture>
               </div>
@@ -684,8 +711,8 @@
                 action="echo.htmlacademy.ru"
                 method="post"
               >
-                <input type="email" name="email" />
-                <input type="password" name="password" />
+                <input type="email" name="email" placeholder="Your E-mail" />
+                <input type="password" name="password" placeholder="Password" />
                 <p class="login__restore-pw">Forgot your password?</p>
 
                 <button class="login__submit button" type="submit">
@@ -718,21 +745,21 @@
                     <picture>
                       <source
                         srcset="
-                          img/hero/hero-catalog.webp,
-                          img/hero/hero-catalog@2x.webp 2x
+                          img/necklace-detail.webp,
+                          img/necklace-detail@2x.webp 2x
                         "
                         type="image/webp"
                       />
                       <img
-                        src="img/hero/hero-catalog.jpg"
-                        srcset="img/hero/hero-catalog.jpg 2x"
-                        width="1366"
-                        height="453"
-                        alt="several beautiful necklaces on the neckline of a girl in a white blouse"
+                        src="img/necklace-detail.jpg"
+                        srcset="img/necklace-detail.jpg 2x"
+                        width="84"
+                        height="79"
+                        alt="pretty necklace on a blouse"
                       />
                     </picture>
                   </div>
-                  <div class="card__product-info">
+                  <div class="cart__product-info">
                     <h3>Gold Necklace</h3>
                     <p>$ 115</p>
                   </div>

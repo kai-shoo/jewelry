@@ -65,6 +65,7 @@
 }
 
 .filter__icon {
+  display: block;
   transition: transform 0.2s ease-out;
 
   .is-active & {
@@ -85,7 +86,7 @@
 .filter__checkbox {
   margin-bottom: 12px;
 
-  font-family: Poppins;
+  font-family: $font-family;
   font-weight: 500;
   font-size: 14px;
   line-height: 130%;

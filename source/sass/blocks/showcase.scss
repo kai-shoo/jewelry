@@ -10,6 +10,10 @@
   @media (max-width: $mobile) {
     padding-top: 32px;
   }
+
+  .page--nojs & {
+    visibility: visible;
+  }
 }
 
 .showcase__header {

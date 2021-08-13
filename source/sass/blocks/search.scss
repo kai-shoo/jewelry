@@ -39,7 +39,8 @@
     background: $grey-bgc;
     border-radius: 21px;
 
-    .header--active & {
+    .header--active &,
+    .page--nojs & {
       padding: 8px 15px 8px 42px;
       line-height: 24px;
 
@@ -70,7 +71,8 @@
   transform: translateY(-50%);
 
   @media (max-width: $tablet) {
-    .header--active & {
+    .header--active &,
+    .page--nojs & {
       top: 55%;
       left: 17px;
 
@@ -85,7 +87,8 @@
   .search:focus-within & {
     fill: $accent;
 
-    .header--active & {
+    .header--active &,
+    .page--nojs & {
       fill: white;
     }
   }
@@ -93,7 +96,8 @@
   @media (max-width: $tablet) {
     fill: $white;
 
-    .header--active & {
+    .header--active &,
+    .page--nojs & {
       width: 16px;
       height: 16px;
     }

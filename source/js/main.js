@@ -1,4 +1,5 @@
 "use strict";
+@include("./files/no-js.js", {});
 @include("./files/login-modal.js", {});
 @include("./files/cart-modal.js", {});
 @include("./files/menu.js", {});

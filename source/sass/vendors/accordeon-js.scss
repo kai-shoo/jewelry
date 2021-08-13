@@ -1,3 +1,4 @@
+/* stylelint-disable */
 @charset "UTF-8";
 /*!
  * Accordion v3.1.1
@@ -9,17 +10,19 @@
  */
 .ac {
   margin-top: 10px;
-  border: 1px solid #eee;
-  background-color: #fff;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
   box-sizing: border-box;
 }
+
 .ac-header {
   margin: 0;
   padding: 0;
 }
+
 .ac-trigger {
   font: bold 16px Arial, sans-serif;
-  color: #111;
+  color: #111111;
   text-align: left;
   width: 100%;
   padding: 10px 30px 10px 10px;
@@ -33,6 +36,7 @@
   margin: 0;
   border: 0;
 }
+
 .ac-trigger::after {
   content: "+";
   text-align: center;
@@ -43,9 +47,11 @@
   right: 10px;
   top: 50%;
 }
+
 .ac-trigger:focus {
   color: #8a8a8a;
 }
+
 .ac-panel {
   overflow: hidden;
   -webkit-transition-property: height, visibility;
@@ -53,18 +59,22 @@
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
+
 .ac-panel .ac-text {
   font: 15px/24px Arial, sans-serif;
-  color: #111;
+  color: #111111;
   padding: 10px;
   margin: 0;
 }
+
 .js-enabled .ac-panel {
   visibility: hidden;
 }
+
 .is-active .ac-panel {
   visibility: visible;
 }
+
 .is-active .ac-trigger::after {
   content: "\2013";
 }

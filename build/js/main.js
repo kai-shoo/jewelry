@@ -1,5 +1,13 @@
 "use strict";
 (function () {
+  const page = document.querySelector(`.page`);
+  if (page) {
+    page.classList.remove(`page--nojs`);
+    page.classList.remove(`page--nojs`);
+  }
+})();
+;
+(function () {
   const modalButton = document.querySelector(`.nav__link--login`);
   const page = document.querySelector(`.page`);
   const modalClose = document.querySelector(`#modal .modal__close`);

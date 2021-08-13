@@ -9,6 +9,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="html academy grading" />
     <title>Jewellery</title>
+    <link
+      rel="preload"
+      href="fonts/poppins-v15-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/cormorant-garamond-v10-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="page page--nojs page-catalog">
@@ -30,7 +44,7 @@
         </label>
       </div>
 
-      <a class="header__logo logo" href="index.html">
+      <a class="header__logo logo" href="main.html">
         <img src="img/logo.svg" alt="Jewellery" width="66" height="66" />
       </a>
       <div class="header__nav header__nav--secondary nav nav--secondary">
@@ -122,11 +136,11 @@
                   <h2 class="ac-header">
                     <button type="button" class="ac-trigger filter__trigger">
                       <span class="filter__button-text">Product</span>
-                      <div class="filter__icon">
+                      <span class="filter__icon">
                         <svg width="17" height="10">
                           <use xlink:href="img/sprite_auto.svg#icon-switch" />
                         </svg>
-                      </div>
+                      </span>
                     </button>
                   </h2>
                   <div class="ac-panel filter__panel">
@@ -137,7 +151,7 @@
                         name="necklaces"
                         checked
                       />
-                      <div class="checkbox__box"></div>
+                      <span class="checkbox__box"></span>
                       <span class="checkbox__label">Necklaces</span>
                     </label>
                     <label class="filter__checkbox checkbox">
@@ -147,7 +161,7 @@
                         name="chokers"
                         checked
                       />
-                      <div class="checkbox__box"></div>
+                      <span class="checkbox__box"></span>
                       <span class="checkbox__label">Chokers</span>
                     </label>
                     <label class="filter__checkbox checkbox">
@@ -156,7 +170,7 @@
                         type="checkbox"
                         name="rings"
                       />
-                      <div class="checkbox__box"></div>
+                      <span class="checkbox__box"></span>
                       <span class="checkbox__label">Rings</span>
                     </label>
                     <label class="filter__checkbox checkbox">
@@ -166,7 +180,7 @@
                         name="earrings"
                         checked
                       />
-                      <div class="checkbox__box"></div>
+                      <span class="checkbox__box"></span>
                       <span class="checkbox__label">Earrings</span>
                     </label>
                   </div>
@@ -175,11 +189,11 @@
                   <h2 class="ac-header">
                     <button type="button" class="ac-trigger filter__trigger">
                       <span class="filter__button-text">Material</span>
-                      <div class="filter__icon">
+                      <span class="filter__icon">
                         <svg width="17" height="10">
                           <use xlink:href="img/sprite_auto.svg#icon-switch" />
                         </svg>
-                      </div>
+                      </span>
                     </button>
                   </h2>
                   <div class="ac-panel filter__panel">
@@ -190,7 +204,7 @@
                         name="gold"
                         checked
                       />
-                      <div class="checkbox__box"></div>
+                      <span class="checkbox__box"></span>
                       <span class="checkbox__label">Gold</span>
                     </label>
                     <label class="filter__checkbox checkbox">
@@ -200,7 +214,7 @@
                         name="silver"
                         checked
                       />
-                      <div class="checkbox__box"></div>
+                      <span class="checkbox__box"></span>
                       <span class="checkbox__label">Silver</span>
                     </label>
                   </div>
@@ -209,11 +223,11 @@
                   <h2 class="ac-header">
                     <button type="button" class="ac-trigger filter__trigger">
                       <span class="filter__button-text">Collection</span>
-                      <div class="filter__icon">
+                      <span class="filter__icon">
                         <svg width="17" height="10">
                           <use xlink:href="img/sprite_auto.svg#icon-switch" />
                         </svg>
-                      </div>
+                      </span>
                     </button>
                   </h2>
                   <div class="ac-panel filter__panel">
@@ -224,7 +238,7 @@
                         name="pink-flamingo"
                         checked
                       />
-                      <div class="checkbox__box"></div>
+                      <span class="checkbox__box"></span>
                       <span class="checkbox__label">Pink flamingo</span>
                     </label>
                     <label class="filter__checkbox checkbox">
@@ -234,7 +248,7 @@
                         name="dreams"
                         checked
                       />
-                      <div class="checkbox__box"></div>
+                      <span class="checkbox__box"></span>
                       <span class="checkbox__label">Dreams</span>
                     </label>
                   </div>
@@ -243,11 +257,11 @@
                   <h2 class="ac-header">
                     <button type="button" class="ac-trigger filter__trigger">
                       <span class="filter__button-text">Price</span>
-                      <div class="filter__icon">
+                      <span class="filter__icon">
                         <svg width="17" height="10">
                           <use xlink:href="img/sprite_auto.svg#icon-switch" />
                         </svg>
-                      </div>
+                      </span>
                     </button>
                   </h2>
                   <div class="ac-panel filter__panel">
@@ -733,7 +747,7 @@
           <h2 class="visually-hidden">Social links</h2>
           <ul class="social__container">
             <li class="social__item">
-              <a href="" class="social__link">
+              <a href="#" class="social__link">
                 <span class="social__icon social__icon--fb">
                   <svg width="8" height="15">
                     <use xlink:href="img/sprite_auto.svg#icon-fb" />
@@ -743,7 +757,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link">
+              <a href="#" class="social__link">
                 <span class="social__icon social__icon--insta">
                   <svg width="15" height="15">
                     <use xlink:href="img/sprite_auto.svg#icon-insta" />
@@ -753,7 +767,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link">
+              <a href="#" class="social__link">
                 <span class="social__icon social__icon--pin">
                   <svg width="15" height="15">
                     <use xlink:href="img/sprite_auto.svg#icon-pin" />
@@ -763,7 +777,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link">
+              <a href="#" class="social__link">
                 <span class="social__icon social__icon--twi">
                   <svg width="15" height="13">
                     <use xlink:href="img/sprite_auto.svg#icon-twi" />
@@ -793,6 +807,7 @@
                     srcset="img/modal-bg.jpg 2x"
                     width="442"
                     height="138"
+                    alt="pretty earrings on a blouse"
                   />
                 </picture>
               </div>
@@ -804,8 +819,8 @@
                 action="echo.htmlacademy.ru"
                 method="post"
               >
-                <input type="email" name="email" />
-                <input type="password" name="password" />
+                <input type="email" name="email" placeholder="Your E-mail" />
+                <input type="password" name="password" placeholder="Password" />
                 <p class="login__restore-pw">Forgot your password?</p>
 
                 <button class="login__submit button" type="submit">

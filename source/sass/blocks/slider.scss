@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
 }
+
 .slider__track {
   position: absolute;
   top: 50%;
@@ -36,7 +37,6 @@
     height: 15px;
     border-radius: 50%;
     background-color: $accent;
-    width: attr(data-value px);
 
     transform-origin: top;
     transition: transform 0.2s ease-out;
@@ -74,6 +74,7 @@
     line-height: 130%;
   }
 }
+
 .slider__handle-2 {
   margin-right: 0;
 }

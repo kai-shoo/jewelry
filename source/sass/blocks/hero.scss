@@ -96,9 +96,8 @@
 
   .hero--catalog & {
     font-size: 22px;
-    font-family: Cormorant Garamond;
+    font-family: $font-family-ui;
     font-weight: 500;
-    font-size: 22px;
 
     @media (max-width: $mobile) {
       font-size: 22px;

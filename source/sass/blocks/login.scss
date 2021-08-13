@@ -5,6 +5,7 @@
   min-height: 586px;
   max-height: 100vh;
 }
+
 .login__hero {
   position: relative;
   height: 138px;
@@ -94,7 +95,7 @@
     border-bottom: 1px solid $accent;
 
     &::placeholder {
-      color: $black;
+      color: rgba($accent, 0.6);
     }
   }
 }
@@ -110,5 +111,6 @@
   color: $grey;
 
   cursor: pointer;
+
   @include hover-default;
 }

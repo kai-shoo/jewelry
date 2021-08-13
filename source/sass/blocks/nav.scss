@@ -12,7 +12,8 @@
   }
 
   @media (max-width: $tablet) {
-    .header--active .nav--secondary & {
+    .header--active .nav--secondary &,
+    .page--nojs .nav--secondary & {
       display: contents;
     }
   }
@@ -48,7 +49,8 @@
       right: 44px;
       margin: 0;
 
-      .header--active & {
+      .header--active &,
+      .page--nojs & {
         &:hover,
         &:focus {
           border-bottom: 1px solid white;
@@ -62,7 +64,8 @@
     }
   }
 
-  .header--active & {
+  .header--active &,
+  .page--nojs & {
     @media (max-width: $tablet) {
       color: $white;
 
@@ -103,7 +106,8 @@
     @media (max-width: $tablet) {
       display: none;
 
-      .header--active & {
+      .header--active &,
+      .page--nojs & {
         margin-top: 20px;
 
         display: block;
@@ -127,7 +131,6 @@
 .nav__cart-icon svg {
   stroke: $primary;
   fill: transparent;
-  stroke: $primary;
 
   .nav__link--cart:hover &,
   .nav__link--cart:focus & {
@@ -135,12 +138,15 @@
   }
 
   @media (max-width: $tablet) {
-    .header--active & {
+    .header--active &,
+    .page--nojs & {
       stroke: $white;
     }
 
     .header--active .nav__link--cart:hover &,
-    .header--active .nav__link--cart:focus & {
+    .header--active .nav__link--cart:focus &,
+    .page--nojs .nav__link--cart:hover &,
+    .page--nojs .nav__link--cart:focus & {
       stroke: $white;
     }
   }

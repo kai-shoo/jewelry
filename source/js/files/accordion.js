@@ -1,3 +1,4 @@
+/* stylelint-disable */
 /* eslint-disable new-cap */
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */

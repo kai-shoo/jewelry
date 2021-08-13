@@ -3,6 +3,7 @@
   width: 100%;
 
   transition: transform 0.2s ease-out;
+
   &:hover,
   &:focus-within {
     transform: translateY(-24px);
@@ -33,17 +34,9 @@
     height: 136px;
   }
 
-  // .product-card--catalog & {
-  //   height: 272px;
-
-  //   @media (max-width: $tablet) {
-  //     height: 340px;
-  //   }
-
-  //   @media (max-width: $mobile) {
-  //     height: 136px;
-  //   }
-  // }
+  .page--nojs & {
+    overflow: hidden;
+  }
 }
 
 .product-card__image img {
@@ -55,6 +48,10 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+
+  .page--nojs & {
+    position: static;
+  }
 }
 
 .product-card h3 {
@@ -73,7 +70,6 @@
 }
 
 .product-card p {
-  margin-top: 0;
   margin-top: 6px;
 
   font-weight: bold;

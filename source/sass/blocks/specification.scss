@@ -35,11 +35,13 @@
     margin-bottom: 40px;
   }
 }
+
 .specification__tabs {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 21px;
 }
+
 .specification__tab {
   padding: 0;
   margin-right: 36px;
@@ -101,6 +103,7 @@
 
   text-align: end;
 }
+
 .specification__add {
   margin-top: auto;
   margin-bottom: 15px;
@@ -119,7 +122,7 @@
   color: $grey;
 
   @media (max-width: $tablet) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   @media (max-width: $mobile) {
