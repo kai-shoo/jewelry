@@ -271,12 +271,11 @@
                 >
                   Apply
                 </button>
-                <button
+                <input
                   class="filter__button filter__button--clear"
-                  type="button"
-                >
-                  Clear All
-                </button>
+                  type="reset"
+                  value="Clear All"
+                />
               </div>
             </form>
           </div>
@@ -661,7 +660,9 @@
               <button class="pagination__item-button" type="button">5</button>
             </li>
           </ul>
-          <div class="pagination__button-wrapper--next">
+          <div
+            class="pagination__button-wrapper pagination__button-wrapper--next"
+          >
             <button class="pagination__nav-button" type="button">Next</button>
           </div>
         </section>
@@ -820,78 +821,6 @@
               </p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--active modal--cart" id="modal-login">
-      <div class="modal__overlay">
-        <div class="modal__wrapper">
-          <div class="modal__window">
-            <div class="cart">
-              <h2>The item was added to your cart</h2>
-
-              <div class="cart__info">
-                <div class="cart__product">
-                  <div class="cart__image">
-                    <picture>
-                      <source
-                        srcset="
-                          img/hero/hero-catalog.webp,
-                          img/hero/hero-catalog@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        src="img/hero/hero-catalog.jpg"
-                        srcset="img/hero/hero-catalog.jpg 2x"
-                        width="1366"
-                        height="453"
-                        alt="several beautiful necklaces on the neckline of a girl in a white blouse"
-                      />
-                    </picture>
-                  </div>
-                  <div class="card__product-info">
-                    <h3>Gold Necklace</h3>
-                    <p>$ 115</p>
-                  </div>
-                </div>
-                <div class="cart__quantity">
-                  <button
-                    class="cart__quantity-button cart__quantity-button--plus"
-                    type="button"
-                    aria-label="more"
-                  ></button>
-                  <p>1</p>
-                  <button
-                    class="cart__quantity-button cart__quantity-button--minus"
-                    type="button"
-                    aria-label="less"
-                  ></button>
-                </div>
-              </div>
-
-              <div class="cart__footer">
-                <div class="cart__output">
-                  <p>You have 1 item in the cart</p>
-                  <div class="cart__price">
-                    <p>Cart subtotal: $ 115</p>
-                  </div>
-                </div>
-                <div class="cart__buttons">
-                  <a
-                    href="catalog.html"
-                    class="cart__button button button--empty"
-                    ><span class="button__inner">Continue shopping</span></a
-                  >
-                  <a href="checkout.html" class="cart__button button">Checkout</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="modal__close" type="button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
         </div>
       </div>
     </div>

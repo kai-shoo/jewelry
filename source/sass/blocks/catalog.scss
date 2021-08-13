@@ -52,4 +52,6 @@
   @media (max-width: $mobile) {
     margin-bottom: 40px;
   }
+
+  @include hover-default;
 }

@@ -161,6 +161,14 @@
 
     transform: translate(50%, -50%);
   }
+
+  @media (max-width: $mobile) {
+    z-index: 10;
+    top: 0;
+    right: 20px;
+  }
+
+  @include hover-default;
 }
 
 .filter__button-close {
