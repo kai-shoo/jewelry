@@ -6,16 +6,17 @@
 
   list-style: none;
 
-  @media (min-width: $desktop) {
-    margin: -35px 0 0 -35px;
-    width: calc(100% + 35px);
-  }
+  margin: -35px 0 0 -35px;
+  width: calc(100% + 35px);
 
   @media (max-width: $tablet) {
     .header--active .nav--secondary &,
     .page--nojs .nav--secondary & {
       display: contents;
     }
+
+    margin: auto;
+    width: auto;
   }
 
   @media (max-width: $tablet) {
@@ -37,9 +38,7 @@
     opacity: 0.7;
   }
 
-  @media (min-width: $desktop) {
-    margin: 35px 0 0 35px;
-  }
+  margin: 35px 0 0 35px;
 
   &--cart {
     @media (max-width: $tablet) {
@@ -62,6 +61,10 @@
       top: 37px;
       right: 14px;
     }
+  }
+
+  @media (max-width: $tablet) {
+    margin: initial;
   }
 
   .header--active &,
@@ -123,8 +126,10 @@
 }
 
 .nav__cart-icon {
-  @media (min-width: $desktop) {
-    display: none;
+  display: none;
+
+  @media (max-width: $tablet) {
+    display: block;
   }
 }
 

@@ -38,6 +38,7 @@
 .splide__pagination li {
   list-style-type: none;
   display: inline-block;
+  vertical-align: baseline;
   line-height: 1;
   margin: 0;
 }
@@ -75,6 +76,7 @@
   bottom: 0;
   margin: auto;
   display: inline-block;
+  vertical-align: baseline;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -211,6 +213,8 @@
 
 .splide__pagination__page {
   display: inline-block;
+  vertical-align: baseline;
+
   background: transparent;
   transition: transform 0.2s linear;
   border: none;

@@ -253,9 +253,9 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 (function () {
-  const hasSplide = document.querySelector(`.splide`);
+  const hasSplide = document.querySelector(`.showcase`);
   if (hasSplide) {
-    new Splide(`.splide`, {
+    new Splide(`.showcase`, {
       type: `loop`,
       perPage: 4,
       perMove: 4,
@@ -300,7 +300,10 @@
     }
   };
 
-  window.addEventListener(`DOMContentLoaded `, handleMobileWidth(mediaQueryMobile));
+  window.addEventListener(
+    `DOMContentLoaded `,
+    handleMobileWidth(mediaQueryMobile)
+  );
   mediaQueryMobile.addEventListener(`change`, handleMobileWidth);
 })();
 ;

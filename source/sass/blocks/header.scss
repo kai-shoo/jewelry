@@ -6,9 +6,7 @@
   justify-content: space-between;
   padding-top: 30px;
 
-  @media (min-width: $desktop) {
-    align-items: flex-start;
-  }
+  align-items: flex-start;
 
   @media (max-width: $tablet) {
     padding-bottom: 23px;
@@ -33,9 +31,7 @@
 }
 
 .header__logo {
-  @media (min-width: $desktop) {
-    margin-right: 100px;
-  }
+  margin-right: 100px;
 
   @media (max-width: $tablet) {
     order: -1;
@@ -50,12 +46,11 @@
 }
 
 .header__search {
-  @media (min-width: $desktop) {
-    margin-top: 8px;
-  }
+  margin-top: 8px;
 
   @media (max-width: $tablet) {
     display: none;
+    margin-top: initial;
 
     .header--active &,
     .page--nojs & {
@@ -68,11 +63,11 @@
 
 .header__nav {
   &--secondary {
-    @media (min-width: $desktop) {
-      margin-top: 8px;
-    }
+    margin-top: 8px;
 
     @media (max-width: $tablet) {
+      margin-top: initial;
+
       .header--active &,
       .page--nojs & {
         display: contents;

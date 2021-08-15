@@ -6,10 +6,10 @@
   width: 50px;
   height: 50px;
 
-  background-color: transparent;
+  background: transparent;
 
   .header--active & {
-    background-color: transparent;
+    background: transparent;
   }
 }
 
@@ -24,7 +24,7 @@
   padding: 0;
   margin-left: -13px;
 
-  background-color: transparent;
+  background: transparent;
   border: none;
   cursor: pointer;
 
@@ -46,12 +46,12 @@
 
   width: 25px;
   height: 1px;
-  background-color: $primary;
+  background: $primary;
 
   transform: translate(-50%, -50%);
 
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background-color 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     opacity 0.55s ease;
 
   &::before,
@@ -60,7 +60,7 @@
     position: absolute;
     width: 25px;
     height: 1px;
-    background-color: $primary;
+    background: $primary;
 
     transition: 0.5s;
     transform: translateX(-50%);
@@ -75,14 +75,14 @@
   }
 
   .header--active & {
-    background-color: $white;
+    background: $white;
 
     &::before {
-      background-color: $white;
+      background: $white;
     }
 
     &::after {
-      background-color: $white;
+      background: $white;
     }
   }
 }

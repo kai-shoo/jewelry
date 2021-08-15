@@ -90,11 +90,14 @@
     </header>
 
     <main>
+      <h1 class="visually-hidden">Gold Necklace</h1>
       <section class="product container">
-        <div class="product__gallery gallery">
+        <div class="product__gallery gallery splide">
           <div class="gallery__track splide__track">
             <div class="splide__list gallery__list">
               <div class="gallery__image splide__slide">
+                <!-- 1х: 100px; 2x: 200px -->
+
                 <picture>
                   <source
                     srcset="
@@ -115,6 +118,8 @@
                 </picture>
               </div>
               <div class="gallery__image splide__slide">
+                <!-- 1х: 100px; 2x: 200px -->
+
                 <picture>
                   <source
                     srcset="
@@ -135,6 +140,8 @@
                 </picture>
               </div>
               <div class="gallery__image splide__slide">
+                <!-- 1х: 100px; 2x: 200px -->
+
                 <picture>
                   <source
                     srcset="
@@ -155,6 +162,8 @@
                 </picture>
               </div>
               <div class="gallery__image splide__slide gallery__image--big">
+                <!-- 1х: 470px; 2x: 940px -->
+
                 <picture>
                   <source
                     srcset="
@@ -222,9 +231,7 @@
         </div>
       </section>
 
-      <section
-        class="showcase page-product__showcase product-p container splide"
-      >
+      <section class="showcase page-product__showcase container splide">
         <div class="showcase__header heading">
           <h2>You May Also Like</h2>
           <a class="showcase__link-shop link" href="#"
@@ -237,6 +244,8 @@
               <article class="showcase__card product-card">
                 <a class="product-card__wrapper" href="#">
                   <div class="product-card__image showcase__image">
+                    <!-- 1х: 270px; 2x: 540px -->
+
                     <picture>
                       <source
                         srcset="
@@ -265,6 +274,8 @@
               <article class="showcase__card product-card">
                 <a class="product-card__wrapper" href="#">
                   <div class="product-card__image showcase__image">
+                    <!-- 1х: 270px; 2x: 540px -->
+
                     <picture>
                       <source
                         srcset="
@@ -293,6 +304,8 @@
               <article class="showcase__card product-card">
                 <a class="product-card__wrapper" href="#">
                   <div class="product-card__image showcase__image">
+                    <!-- 1х: 270px; 2x: 540px -->
+
                     <picture>
                       <source
                         srcset="
@@ -321,6 +334,8 @@
               <article class="showcase__card product-card">
                 <a class="product-card__wrapper" href="#">
                   <div class="product-card__image showcase__image">
+                    <!-- 1х: 270px; 2x: 540px -->
+
                     <picture>
                       <source
                         srcset="
@@ -349,6 +364,8 @@
               <article class="showcase__card product-card">
                 <a class="product-card__wrapper" href="#">
                   <div class="product-card__image showcase__image">
+                    <!-- 1х: 270px; 2x: 540px -->
+
                     <picture>
                       <source
                         srcset="
@@ -377,6 +394,8 @@
               <article class="showcase__card product-card">
                 <a class="product-card__wrapper" href="#">
                   <div class="product-card__image showcase__image">
+                    <!-- 1х: 270px; 2x: 540px -->
+
                     <picture>
                       <source
                         srcset="
@@ -405,6 +424,8 @@
               <article class="showcase__card product-card">
                 <a class="product-card__wrapper" href="#">
                   <div class="product-card__image showcase__image">
+                    <!-- 1х: 270px; 2x: 540px -->
+
                     <picture>
                       <source
                         srcset="
@@ -433,6 +454,8 @@
               <article class="showcase__card product-card">
                 <a class="product-card__wrapper" href="#">
                   <div class="product-card__image showcase__image">
+                    <!-- 1х: 270px; 2x: 540px -->
+
                     <picture>
                       <source
                         srcset="
@@ -461,6 +484,8 @@
               <article class="showcase__card product-card">
                 <a class="product-card__wrapper" href="#">
                   <div class="product-card__image showcase__image">
+                    <!-- 1х: 270px; 2x: 540px -->
+
                     <picture>
                       <source
                         srcset="
@@ -489,6 +514,8 @@
               <article class="showcase__card product-card">
                 <a class="product-card__wrapper" href="#">
                   <div class="product-card__image showcase__image">
+                    <!-- 1х: 270px; 2x: 540px -->
+
                     <picture>
                       <source
                         srcset="
@@ -517,6 +544,8 @@
               <article class="showcase__card product-card">
                 <a class="product-card__wrapper" href="#">
                   <div class="product-card__image showcase__image">
+                    <!-- 1х: 270px; 2x: 540px -->
+
                     <picture>
                       <source
                         srcset="
@@ -547,6 +576,8 @@
               <article class="showcase__card product-card">
                 <a class="product-card__wrapper" href="#">
                   <div class="product-card__image showcase__image">
+                    <!-- 1х: 270px; 2x: 540px -->
+
                     <picture>
                       <source
                         srcset="
@@ -582,7 +613,7 @@
           <h2>News and updates from CH. No&nbsp;spam, we promise.</h2>
           <form
             class="subscribe__form"
-            action="https://echo.htmlacademy.ru/"
+            action="https://echo.htmlacademy.ru"
             method="post"
           >
             <div class="subscribe__input-wrapper">
@@ -689,6 +720,7 @@
           <div class="modal__window">
             <div class="login">
               <div class="login__hero">
+                <!-- 1х: 442px; 2x: 884px -->
                 <picture>
                   <source
                     srcset="img/modal-bg.webp, img/modal-bg@2x.webp 2x"
@@ -708,11 +740,21 @@
 
               <form
                 class="login__form"
-                action="echo.htmlacademy.ru"
+                action="https://echo.htmlacademy.ru"
                 method="post"
               >
-                <input type="email" name="email" placeholder="Your E-mail" />
-                <input type="password" name="password" placeholder="Password" />
+                <label class="login__label">
+                  <span class="visually-hidden">Email</span>
+                  <input type="email" name="email" placeholder="Your E-mail" />
+                </label>
+                <label class="login__label">
+                  <span class="visually-hidden">Email</span>
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                  />
+                </label>
                 <p class="login__restore-pw">Forgot your password?</p>
 
                 <button class="login__submit button" type="submit">
@@ -742,6 +784,7 @@
               <div class="cart__info">
                 <div class="cart__product">
                   <div class="cart__image">
+                    <!-- 1х: 84px; 2x: 168px -->
                     <picture>
                       <source
                         srcset="
@@ -792,7 +835,7 @@
                     class="cart__button button button--empty"
                     ><span class="button__inner">Continue shopping</span></a
                   >
-                  <a href="#" class="cart__button button">Checkout</a>
+                  <a href="cart.html" class="cart__button button">Checkout</a>
                 </div>
               </div>
             </div>

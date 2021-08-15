@@ -69,7 +69,7 @@
   cursor: pointer;
 
   &--empty {
-    background-color: $white;
+    background: $white;
     color: $primary;
 
     @media (max-width: $tablet) {

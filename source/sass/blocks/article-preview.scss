@@ -4,10 +4,8 @@
   display: grid;
   grid-template-columns: 1fr 285px;
 
-  @media (min-width: $desktop) {
-    .article-preview:nth-child(2n) & {
-      grid-template-columns: 285px 1fr;
-    }
+  .article-preview:nth-child(2n) & {
+    grid-template-columns: 285px 1fr;
   }
 
   .article-preview--big & {
@@ -28,11 +26,19 @@
 
   @media (max-width: $tablet) {
     grid-template-columns: 1fr 1fr;
+
+    .article-preview:nth-child(2n) & {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   @media (max-width: $mobile) {
     grid-template-columns: 1fr;
     grid-template-rows: 256px minmax(max-content, 256px);
+
+    .article-preview:nth-child(2n) & {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
@@ -83,7 +89,7 @@
   justify-content: flex-start;
   padding: 67px 60px 10px 60px;
 
-  background-color: $neutral;
+  background: $neutral;
 
   @media (max-width: $tablet) {
     padding-left: 85px;

@@ -11,14 +11,14 @@
 
   width: 100%;
   height: 1px;
-  background-color: $neutral;
+  background: $neutral;
 
   transform: translateY(-50%);
 }
 
 .slider__range {
   height: 1px;
-  background-color: $accent;
+  background: $accent;
   width: 90px;
 }
 
@@ -36,7 +36,7 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: $accent;
+    background: $accent;
 
     transform-origin: top;
     transition: transform 0.2s ease-out;

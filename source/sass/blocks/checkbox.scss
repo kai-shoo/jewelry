@@ -11,6 +11,6 @@
   border: 1px solid $accent;
 
   .checkbox input:checked + & {
-    background-color: $accent;
+    background: $accent;
   }
 }
