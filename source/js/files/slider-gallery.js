@@ -9,7 +9,8 @@
   const handleMobileWidth = (mql) => {
     if (mql.matches && !slider && gallerySlider) {
       slider = new Splide(`.gallery`, {
-        type: `loop`,
+        type: `slide`,
+        rewind: true,
         perPage: 1,
         perMove: 1,
         arrows: false,
@@ -26,6 +27,9 @@
     }
   };
 
-  window.addEventListener(`DOMContentLoaded `, handleMobileWidth(mediaQueryMobile));
+  window.addEventListener(
+    `DOMContentLoaded `,
+    handleMobileWidth(mediaQueryMobile)
+  );
   mediaQueryMobile.addEventListener(`change`, handleMobileWidth);
 })();

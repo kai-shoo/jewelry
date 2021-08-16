@@ -256,12 +256,16 @@
   const hasSplide = document.querySelector(`.showcase`);
   if (hasSplide) {
     new Splide(`.showcase`, {
-      type: `loop`,
+      type: `slide`,
+      keyboard: `global`,
+      rewind: true,
+      slideFocus: false,
       perPage: 4,
       perMove: 4,
       arrowPath: `M5 19.5H34M34 19.5L28.5135 15M34 19.5L28.5135 24`,
       gap: `30px`,
       trimSpace: true,
+      clones: 0,
       breakpoints: {
         1023: {
           perPage: 2,
@@ -283,7 +287,8 @@
   const handleMobileWidth = (mql) => {
     if (mql.matches && !slider && gallerySlider) {
       slider = new Splide(`.gallery`, {
-        type: `loop`,
+        type: `slide`,
+        rewind: true,
         perPage: 1,
         perMove: 1,
         arrows: false,
@@ -300,7 +305,10 @@
     }
   };
 
-  window.addEventListener(`DOMContentLoaded `, handleMobileWidth(mediaQueryMobile));
+  window.addEventListener(
+    `DOMContentLoaded `,
+    handleMobileWidth(mediaQueryMobile)
+  );
   mediaQueryMobile.addEventListener(`change`, handleMobileWidth);
 })();
 ;
