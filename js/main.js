@@ -300,10 +300,7 @@
     }
   };
 
-  window.addEventListener(
-    `DOMContentLoaded `,
-    handleMobileWidth(mediaQueryMobile)
-  );
+  window.addEventListener(`DOMContentLoaded `, handleMobileWidth(mediaQueryMobile));
   mediaQueryMobile.addEventListener(`change`, handleMobileWidth);
 })();
 ;
