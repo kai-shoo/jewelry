@@ -31,9 +31,16 @@
 }
 
 .header__logo {
-  margin-right: 100px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+
+  transform: translateX(-50%);
 
   @media (max-width: $tablet) {
+    transform: unset;
+    position: static;
+
     order: -1;
     margin-right: auto;
     margin-left: auto;
@@ -64,6 +71,7 @@
 .header__nav {
   &--secondary {
     margin-top: 8px;
+    max-width: 300px;
 
     @media (max-width: $tablet) {
       margin-top: initial;
@@ -79,11 +87,12 @@
     flex-basis: 100%;
     display: block;
     justify-content: center;
-    margin-top: 31px;
+    margin-top: 65px;
     margin-left: 10px;
 
     @media (max-width: $tablet) {
       display: none;
+      margin-top: 45px;
       margin-left: 0;
 
       .header--active &,

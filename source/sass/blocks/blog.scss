@@ -32,7 +32,7 @@
 .blog__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 300px 300px;
+  grid-auto-rows: mimax(300px, max-content) mimax(300px, max-content);
   gap: 30px;
 
   margin: 0;
@@ -47,7 +47,7 @@
 
   @media (max-width: $mobile) {
     grid-template-columns: 1fr;
-    grid-auto-rows: 512px;
+    grid-auto-rows: minmax(512px, max-content);
     gap: 40px;
   }
 }

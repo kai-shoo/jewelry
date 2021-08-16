@@ -3,7 +3,13 @@
   align-items: center;
 }
 
+.checkbox__label {
+  word-break: break-all;
+}
+
 .checkbox__box {
+  flex-grow: 0;
+  flex-shrink: 0;
   margin-right: 11px;
   width: 15px;
   height: 15px;

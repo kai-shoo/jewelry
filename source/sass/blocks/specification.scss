@@ -84,7 +84,7 @@
 .specification__item {
   display: flex;
   padding: 10px 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
 
   border-bottom: 1px solid $neutral;
@@ -96,6 +96,7 @@
 
 .specification__term {
   font-weight: 500;
+  margin-right: 6px;
 }
 
 .specification__value {
