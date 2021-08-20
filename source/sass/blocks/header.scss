@@ -7,14 +7,13 @@
   padding-top: 30px;
   align-items: flex-start;
 
-  overflow: scroll;
-
   @media (max-width: $tablet) {
     padding-bottom: 23px;
     align-items: center;
 
     &.header--active,
     .page--nojs & {
+      overflow: scroll;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;

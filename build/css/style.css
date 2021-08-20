@@ -647,8 +647,7 @@ a {
   padding-top: 30px;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start;
-  overflow: scroll; }
+          align-items: flex-start; }
   @media (max-width: 1023px) {
     .header {
       padding-bottom: 23px;
@@ -657,6 +656,7 @@ a {
               align-items: center; }
       .header.header--active,
       .page--nojs .header {
+        overflow: scroll;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -2185,8 +2185,10 @@ a {
     margin-bottom: 0; } }
 
 .filter {
-  width: 100%;
-  overflow: scroll; }
+  width: 100%; }
+  @media (max-width: 1023px) {
+    .filter.active {
+      overflow: scroll; } }
 
 .filter__form {
   display: -webkit-box;

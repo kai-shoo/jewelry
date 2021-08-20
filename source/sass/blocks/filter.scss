@@ -1,7 +1,11 @@
 .filter {
   width: 100%;
 
-  overflow: scroll;
+  @media (max-width: $tablet) {
+    &.active {
+      overflow: scroll;
+    }
+  }
 }
 
 .filter__form {
