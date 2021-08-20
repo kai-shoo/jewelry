@@ -10,9 +10,9 @@
 (function () {
   const modalButton = document.querySelector(`.nav__link--login`);
   const page = document.querySelector(`.page`);
-  const modalClose = document.querySelector(`#modal .modal__close`);
-  const modal = document.querySelector(`#modal`);
-  const overlay = document.querySelector(`#modal .modal__overlay`);
+  const modalClose = document.querySelector(`#modal-login .modal__close`);
+  const modal = document.querySelector(`#modal-login`);
+  const overlay = document.querySelector(`#modal-login .modal__overlay`);
 
   if (page && modalButton && modalClose && modal && overlay) {
     const openModal = function () {
@@ -49,7 +49,7 @@
   }
 
   function trapFocus(element) {
-    const focusableEls = element.querySelectorAll(`input, textarea, button`);
+    const focusableEls = element.querySelectorAll(`input, textarea, button, a`);
     const firstFocusableEl = focusableEls[0];
     const lastFocusableEl = focusableEls[focusableEls.length - 1];
     const KEYCODE_TAB = 9;
@@ -114,6 +114,7 @@
     });
     modalButton.addEventListener(`click`, (e) => {
       e.preventDefault();
+
       openModal();
     });
   }
@@ -163,7 +164,7 @@
         event.key === `Escape`
       ) {
         header.classList.toggle(`header--active`);
-        page.classList.toggle(`page--block`);
+        page.classList.toggle(`block`);
       }
 
       if (header.classList.contains(`header--active`)) {
@@ -179,7 +180,7 @@
         return;
       }
       header.classList.remove(`header--active`);
-      page.classList.remove(`page--block`);
+      page.classList.remove(`block`);
     });
   }
 })();
@@ -305,10 +306,7 @@
     }
   };
 
-  window.addEventListener(
-    `DOMContentLoaded `,
-    handleMobileWidth(mediaQueryMobile)
-  );
+  window.addEventListener(`DOMContentLoaded `, handleMobileWidth(mediaQueryMobile));
   mediaQueryMobile.addEventListener(`change`, handleMobileWidth);
 })();
 ;
