@@ -71,17 +71,11 @@
   &--xs {
     margin-top: auto;
     padding-bottom: 150 / 230 * 100%;
-
-    @media (max-width: $tablet) {
-    }
   }
 
   &--sm {
     padding-bottom: 230 / 230 * 100%;
     margin-bottom: auto;
-
-    @media (max-width: $tablet) {
-    }
   }
 
   &--lg {
