@@ -711,7 +711,7 @@ a {
 
 .header__nav--secondary {
   margin-top: 8px;
-  max-width: 300px; }
+  max-width: 350px; }
   @media (max-width: 1023px) {
     .header__nav--secondary {
       margin-top: initial; }
