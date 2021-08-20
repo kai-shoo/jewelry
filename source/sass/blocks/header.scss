@@ -5,8 +5,9 @@
   width: 100%;
   justify-content: space-between;
   padding-top: 30px;
-
   align-items: flex-start;
+
+  overflow: scroll;
 
   @media (max-width: $tablet) {
     padding-bottom: 23px;

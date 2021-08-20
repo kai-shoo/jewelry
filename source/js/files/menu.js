@@ -13,7 +13,7 @@
         event.key === `Escape`
       ) {
         header.classList.toggle(`header--active`);
-        page.classList.toggle(`page--block`);
+        page.classList.toggle(`block`);
       }
 
       if (header.classList.contains(`header--active`)) {
@@ -29,7 +29,7 @@
         return;
       }
       header.classList.remove(`header--active`);
-      page.classList.remove(`page--block`);
+      page.classList.remove(`block`);
     });
   }
 })();

@@ -23,16 +23,16 @@
 
 .product-card__image {
   position: relative;
-  flex-grow: 1;
   width: 100%;
-  height: 284px;
+  height: 0;
+  box-sizing: content-box;
+  padding-bottom: 284 / 270 * 100%;
 
   @media (max-width: $tablet) {
-    height: 340px;
+    padding-bottom: 340 / 324 * 100%;
   }
 
   @media (max-width: $mobile) {
-    height: 136px;
   }
 
   .page--nojs & {
@@ -43,16 +43,10 @@
 .product-card__image img {
   position: absolute;
   top: 0;
-  right: 0;
   left: 0;
-  bottom: 0;
   object-fit: cover;
   width: 100%;
   height: 100%;
-
-  .page--nojs & {
-    position: static;
-  }
 }
 
 .product-card h3 {

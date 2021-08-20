@@ -4,6 +4,12 @@
   align-items: center;
   min-height: 586px;
   max-height: 100vh;
+
+  overflow: scroll;
+
+  @media (max-width: $mobile) {
+    min-height: 470px;
+  }
 }
 
 .login__hero {
@@ -11,10 +17,18 @@
   height: 138px;
 
   margin-bottom: 22px;
+
+  @media (max-width: $mobile) {
+    height: 84px;
+  }
 }
 
 .login__hero img {
   object-fit: cover;
+
+  @media (max-width: $mobile) {
+    height: 84px;
+  }
 }
 
 .login h2 {
@@ -24,6 +38,12 @@
   line-height: 130%;
   text-align: center;
   color: inherit;
+  text-transform: capitalize;
+
+  @media (max-width: $mobile) {
+    font-size: 24px;
+    line-height: 130%;
+  }
 }
 
 .login__submit {
@@ -62,8 +82,15 @@
 }
 
 .login__label {
-  margin-bottom: 30px;
   width: 100%;
+
+  &:not(:last-of-type) {
+    margin-bottom: 26px;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 17px;
+    }
+  }
 }
 
 .login__form input {
@@ -115,6 +142,14 @@
   color: $grey;
 
   cursor: pointer;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 44px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 35px;
+  }
 
   @include hover-default;
 }

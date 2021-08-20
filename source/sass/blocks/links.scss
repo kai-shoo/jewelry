@@ -3,7 +3,7 @@
   padding: 0;
 
   columns: 2;
-  column-gap: Min(43%, 140px);
+  // column-gap: Min(43%, 140px);
 
   list-style: none;
 
@@ -17,10 +17,15 @@
 }
 
 .links__item {
-  margin-bottom: 17px;
   width: fit-content;
+  margin: 0 clamp(12px, 2vw, 32px) 17px;
 
   @include hover-animation($white);
+
+  @media (max-width: $tablet) {
+    margin: 0;
+    margin-bottom: 17px;
+  }
 
   &:active {
     opacity: 0.7;

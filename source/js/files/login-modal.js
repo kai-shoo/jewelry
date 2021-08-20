@@ -1,9 +1,9 @@
 (function () {
   const modalButton = document.querySelector(`.nav__link--login`);
   const page = document.querySelector(`.page`);
-  const modalClose = document.querySelector(`#modal .modal__close`);
-  const modal = document.querySelector(`#modal`);
-  const overlay = document.querySelector(`#modal .modal__overlay`);
+  const modalClose = document.querySelector(`#modal-login .modal__close`);
+  const modal = document.querySelector(`#modal-login`);
+  const overlay = document.querySelector(`#modal-login .modal__overlay`);
 
   if (page && modalButton && modalClose && modal && overlay) {
     const openModal = function () {
@@ -40,7 +40,7 @@
   }
 
   function trapFocus(element) {
-    const focusableEls = element.querySelectorAll(`input, textarea, button`);
+    const focusableEls = element.querySelectorAll(`input, textarea, button, a`);
     const firstFocusableEl = focusableEls[0];
     const lastFocusableEl = focusableEls[focusableEls.length - 1];
     const KEYCODE_TAB = 9;

@@ -34,6 +34,7 @@
     });
     modalButton.addEventListener(`click`, (e) => {
       e.preventDefault();
+
       openModal();
     });
   }

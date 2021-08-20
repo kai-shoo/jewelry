@@ -702,7 +702,7 @@
           >
         </div>
         <ul class="instagram-preview__list">
-          <li class="instagram-preview__item">
+          <li class="instagram-preview__item instagram-preview__item--sm">
             <!-- 1х: 230px; 2x: 460px -->
 
             <picture>
@@ -721,7 +721,7 @@
             </picture>
           </li>
 
-          <li class="instagram-preview__item instagram-preview__item--big">
+          <li class="instagram-preview__item instagram-preview__item--lg">
             <!-- 1х: 399px; 2x: 798px -->
 
             <picture>
@@ -740,7 +740,7 @@
             </picture>
           </li>
 
-          <li class="instagram-preview__item">
+          <li class="instagram-preview__item instagram-preview__item--sm">
             <!-- 1х: 230px; 2x: 460px -->
 
             <picture>
@@ -759,7 +759,7 @@
             </picture>
           </li>
 
-          <li class="instagram-preview__item">
+          <li class="instagram-preview__item instagram-preview__item--sm">
             <!-- 1х: 230px; 2x: 460px -->
 
             <picture>
@@ -778,7 +778,7 @@
             </picture>
           </li>
 
-          <li class="instagram-preview__item">
+          <li class="instagram-preview__item instagram-preview__item--xs">
             <!-- 1х: 230px; 2x: 460px -->
 
             <picture>
@@ -797,7 +797,7 @@
             </picture>
           </li>
 
-          <li class="instagram-preview__item">
+          <li class="instagram-preview__item instagram-preview__item--xs">
             <!-- 1х: 230px; 2x: 460px -->
             <picture>
               <source
@@ -815,7 +815,7 @@
             </picture>
           </li>
 
-          <li class="instagram-preview__item">
+          <li class="instagram-preview__item instagram-preview__item--xs">
             <!-- 1х: 230px; 2x: 460px -->
             <picture>
               <source
@@ -852,6 +852,7 @@
                   class="subscribe__input"
                   placeholder="Your E-mail"
                   type="email"
+                  required
                 />
               </label>
               <div class="subscribe__submit-wrapper">
@@ -944,7 +945,7 @@
       </div>
     </footer>
 
-    <div class="modal" id="modal">
+    <div class="modal modal--login" id="modal-login">
       <div class="modal__overlay">
         <div class="modal__wrapper">
           <div class="modal__window">
@@ -967,7 +968,9 @@
                   />
                 </picture>
               </div>
-
+              <button class="modal__close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+              </button>
               <h2>Log in</h2>
 
               <form
@@ -977,28 +980,34 @@
               >
                 <label class="login__label">
                   <span class="visually-hidden">Email</span>
-                  <input type="email" name="email" placeholder="Your E-mail" />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your E-mail"
+                    required
+                  />
                 </label>
                 <label class="login__label">
-                  <span class="visually-hidden">Email</span>
+                  <span class="visually-hidden">Password</span>
                   <input
                     type="password"
                     name="password"
                     placeholder="Password"
+                    required
                   />
                 </label>
-                <p class="login__restore-pw">Forgot your password?</p>
+                <a tabindex="0" class="login__restore-pw"
+                  >Forgot your password?</a
+                >
 
                 <button class="login__submit button" type="submit">
                   Log in
                 </button>
               </form>
-              <button class="modal__close" type="button">
-                <span class="visually-hidden">Закрыть</span>
-              </button>
+
               <p>
                 Don’t have an account?
-                <span class="login__sign-up"> Sign up </span>
+                <a tabindex="0" class="login__sign-up"> Sign up </a>
               </p>
             </div>
           </div>

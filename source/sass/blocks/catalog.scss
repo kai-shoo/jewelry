@@ -55,3 +55,15 @@
 
   @include hover-default;
 }
+
+.catalog__product-list {
+  .catalog--catalog & {
+    @media (max-width: $tablet) {
+      margin-bottom: 43px;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 0;
+    }
+  }
+}

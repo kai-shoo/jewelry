@@ -71,17 +71,5 @@
   &--empty {
     background: $white;
     color: $primary;
-
-    @media (max-width: $tablet) {
-      & .button__inner {
-        width: min-content;
-      }
-    }
-
-    @media (max-width: $mobile) {
-      & .button__inner {
-        width: auto;
-      }
-    }
   }
 }
