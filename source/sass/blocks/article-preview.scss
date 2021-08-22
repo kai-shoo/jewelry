@@ -75,11 +75,8 @@
   display: block;
   object-fit: cover;
   width: 100%;
-  min-height: 100%;
-  max-height: 100%;
 
   @media (max-width: $mobile) {
-    height: inherit;
     max-height: 256px;
   }
 }

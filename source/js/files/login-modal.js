@@ -4,6 +4,7 @@
   const modalClose = document.querySelector(`#modal-login .modal__close`);
   const modal = document.querySelector(`#modal-login`);
   const overlay = document.querySelector(`#modal-login .modal__overlay`);
+  const header = document.querySelector(`header`);
 
   if (page && modalButton && modalClose && modal && overlay) {
     const openModal = function () {
@@ -23,6 +24,10 @@
 
       page.classList.remove(`block`);
       modal.classList.remove(`modal--active`);
+      if (header) {
+        header.classList.remove(`header--active`);
+      }
+
       document.removeEventListener(`keydown`, closeModal);
       modalClose.removeEventListener(`click`, closeModal);
     };
@@ -34,6 +39,7 @@
     });
     modalButton.addEventListener(`click`, (e) => {
       e.preventDefault();
+      e.stopPropagation();
 
       openModal();
     });

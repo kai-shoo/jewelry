@@ -23,6 +23,9 @@
     flex-direction: column;
   }
 
+  .nav--secondary & {
+    width: auto;
+  }
   .nav--alternate & {
     margin-top: 0;
   }

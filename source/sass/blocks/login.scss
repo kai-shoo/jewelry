@@ -5,8 +5,6 @@
   min-height: 586px;
   max-height: 100vh;
 
-  overflow: scroll;
-
   @media (max-width: $mobile) {
     min-height: 470px;
   }
